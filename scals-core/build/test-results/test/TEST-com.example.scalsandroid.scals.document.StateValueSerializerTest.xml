@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.example.scalsandroid.scals.document.StateValueSerializerTest" tests="12" skipped="0" failures="0" errors="0" timestamp="2026-02-08T22:34:31.052Z" hostname="michael.choe-6708" time="0.001">
+  <properties/>
+  <testcase name="bool decoded before int - true is not 1" classname="com.example.scalsandroid.scals.document.StateValueSerializerTest" time="0.0"/>
+  <testcase name="decode boolean true" classname="com.example.scalsandroid.scals.document.StateValueSerializerTest" time="0.0"/>
+  <testcase name="decode double" classname="com.example.scalsandroid.scals.document.StateValueSerializerTest" time="0.0"/>
+  <testcase name="decode object" classname="com.example.scalsandroid.scals.document.StateValueSerializerTest" time="0.0"/>
+  <testcase name="decode string" classname="com.example.scalsandroid.scals.document.StateValueSerializerTest" time="0.0"/>
+  <testcase name="decode nested structure" classname="com.example.scalsandroid.scals.document.StateValueSerializerTest" time="0.001"/>
+  <testcase name="round trip all types" classname="com.example.scalsandroid.scals.document.StateValueSerializerTest" time="0.0"/>
+  <testcase name="accessors return null for wrong type" classname="com.example.scalsandroid.scals.document.StateValueSerializerTest" time="0.0"/>
+  <testcase name="decode array" classname="com.example.scalsandroid.scals.document.StateValueSerializerTest" time="0.0"/>
+  <testcase name="decode integer" classname="com.example.scalsandroid.scals.document.StateValueSerializerTest" time="0.0"/>
+  <testcase name="decode null" classname="com.example.scalsandroid.scals.document.StateValueSerializerTest" time="0.0"/>
+  <testcase name="decode boolean false" classname="com.example.scalsandroid.scals.document.StateValueSerializerTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

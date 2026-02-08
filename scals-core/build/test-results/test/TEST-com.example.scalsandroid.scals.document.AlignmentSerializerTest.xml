@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.example.scalsandroid.scals.document.AlignmentSerializerTest" tests="13" skipped="0" failures="0" errors="0" timestamp="2026-02-08T22:34:31.020Z" hostname="michael.choe-6708" time="0.004">
+  <properties/>
+  <testcase name="decode string shortcut - bottom" classname="com.example.scalsandroid.scals.document.AlignmentSerializerTest" time="0.001"/>
+  <testcase name="decode string shortcut - center" classname="com.example.scalsandroid.scals.document.AlignmentSerializerTest" time="0.0"/>
+  <testcase name="decode string shortcut - leading (horizontal only)" classname="com.example.scalsandroid.scals.document.AlignmentSerializerTest" time="0.0"/>
+  <testcase name="decode string shortcut - bottomLeading" classname="com.example.scalsandroid.scals.document.AlignmentSerializerTest" time="0.0"/>
+  <testcase name="decode object form" classname="com.example.scalsandroid.scals.document.AlignmentSerializerTest" time="0.002"/>
+  <testcase name="round trip shortcut" classname="com.example.scalsandroid.scals.document.AlignmentSerializerTest" time="0.0"/>
+  <testcase name="decode string shortcut - bottomTrailing" classname="com.example.scalsandroid.scals.document.AlignmentSerializerTest" time="0.0"/>
+  <testcase name="decode string shortcut - topLeading" classname="com.example.scalsandroid.scals.document.AlignmentSerializerTest" time="0.0"/>
+  <testcase name="decode object form partial" classname="com.example.scalsandroid.scals.document.AlignmentSerializerTest" time="0.001"/>
+  <testcase name="decode string shortcut - top (vertical only)" classname="com.example.scalsandroid.scals.document.AlignmentSerializerTest" time="0.0"/>
+  <testcase name="round trip object form" classname="com.example.scalsandroid.scals.document.AlignmentSerializerTest" time="0.0"/>
+  <testcase name="decode string shortcut - trailing" classname="com.example.scalsandroid.scals.document.AlignmentSerializerTest" time="0.0"/>
+  <testcase name="decode string shortcut - topTrailing" classname="com.example.scalsandroid.scals.document.AlignmentSerializerTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

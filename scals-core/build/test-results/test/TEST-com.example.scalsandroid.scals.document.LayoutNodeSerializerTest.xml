@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.example.scalsandroid.scals.document.LayoutNodeSerializerTest" tests="8" skipped="0" failures="0" errors="0" timestamp="2026-02-08T22:34:31.049Z" hostname="michael.choe-6708" time="0.002">
+  <properties/>
+  <testcase name="dispatch to Layout for hstack" classname="com.example.scalsandroid.scals.document.LayoutNodeSerializerTest" time="0.0"/>
+  <testcase name="dispatch to SectionLayout" classname="com.example.scalsandroid.scals.document.LayoutNodeSerializerTest" time="0.0"/>
+  <testcase name="nested tree" classname="com.example.scalsandroid.scals.document.LayoutNodeSerializerTest" time="0.001"/>
+  <testcase name="dispatch to Spacer" classname="com.example.scalsandroid.scals.document.LayoutNodeSerializerTest" time="0.0"/>
+  <testcase name="dispatch to Layout for vstack" classname="com.example.scalsandroid.scals.document.LayoutNodeSerializerTest" time="0.0"/>
+  <testcase name="dispatch to Layout for zstack" classname="com.example.scalsandroid.scals.document.LayoutNodeSerializerTest" time="0.0"/>
+  <testcase name="dispatch to Component for unknown type" classname="com.example.scalsandroid.scals.document.LayoutNodeSerializerTest" time="0.0"/>
+  <testcase name="dispatch to ForEach" classname="com.example.scalsandroid.scals.document.LayoutNodeSerializerTest" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

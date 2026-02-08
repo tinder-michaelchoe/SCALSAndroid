@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.example.scalsandroid.scals.document.DefinitionTest" tests="11" skipped="0" failures="0" errors="0" timestamp="2026-02-08T22:34:31.035Z" hostname="michael.choe-6708" time="0.011">
+  <properties/>
+  <testcase name="parse definition with actions" classname="com.example.scalsandroid.scals.document.DefinitionTest" time="0.002"/>
+  <testcase name="round trip full document" classname="com.example.scalsandroid.scals.document.DefinitionTest" time="0.003"/>
+  <testcase name="parse minimal definition" classname="com.example.scalsandroid.scals.document.DefinitionTest" time="0.0"/>
+  <testcase name="parse definition with state" classname="com.example.scalsandroid.scals.document.DefinitionTest" time="0.0"/>
+  <testcase name="parse definition with data sources" classname="com.example.scalsandroid.scals.document.DefinitionTest" time="0.001"/>
+  <testcase name="parse definition with root component" classname="com.example.scalsandroid.scals.document.DefinitionTest" time="0.0"/>
+  <testcase name="parse definition with version" classname="com.example.scalsandroid.scals.document.DefinitionTest" time="0.0"/>
+  <testcase name="unknown keys are ignored" classname="com.example.scalsandroid.scals.document.DefinitionTest" time="0.0"/>
+  <testcase name="parse definition with styles" classname="com.example.scalsandroid.scals.document.DefinitionTest" time="0.001"/>
+  <testcase name="parse definition with edge insets" classname="com.example.scalsandroid.scals.document.DefinitionTest" time="0.0"/>
+  <testcase name="parse definition with section layout" classname="com.example.scalsandroid.scals.document.DefinitionTest" time="0.003"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
