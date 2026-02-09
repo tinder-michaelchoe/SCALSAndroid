@@ -1,5 +1,6 @@
 package com.example.scalsandroid.scals.components.compose.renderers
 
+import androidx.compose.foundation.Image
 import androidx.compose.foundation.layout.Box
 import androidx.compose.material3.CircularProgressIndicator
 import androidx.compose.material3.Icon
@@ -8,6 +9,8 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.layout.ContentScale
+import androidx.compose.ui.platform.LocalContext
+import androidx.compose.ui.res.painterResource
 import coil.compose.AsyncImage
 import coil.compose.SubcomposeAsyncImage
 import coil.compose.SubcomposeAsyncImageContent
@@ -79,6 +82,8 @@ class ImageComposeRenderer : ComposeNodeRendering {
             maxHeight = data.maxHeight,
         )
 
+        val context = LocalContext.current
+
         when {
             // Activity indicator takes priority
             data.source.activityIndicator == true -> {
@@ -88,6 +93,23 @@ class ImageComposeRenderer : ComposeNodeRendering {
                 ) {
                     CircularProgressIndicator(
                         color = data.tintColor?.toComposeColor() ?: Color(0xFF007AFF)
+                    )
+                }
+            }
+            // Local asset/drawable resource
+            data.source.asset != null -> {
+                val resourceId = context.resources.getIdentifier(
+                    data.source.asset,
+                    "drawable",
+                    context.packageName
+                )
+
+                if (resourceId != 0) {
+                    Image(
+                        painter = painterResource(id = resourceId),
+                        contentDescription = null,
+                        modifier = modifier,
+                        contentScale = ContentScale.Fit
                     )
                 }
             }

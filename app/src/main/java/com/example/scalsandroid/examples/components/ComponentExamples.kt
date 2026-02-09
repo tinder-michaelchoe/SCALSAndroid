@@ -521,7 +521,7 @@ private val imagesExample = Example(
               "spacing": 8,
               "alignment": "center",
               "children": [
-                { "type": "image", "image": { "asset": "womanAligator" }, "styleId": "assetImage" },
+                { "type": "image", "image": { "asset": "woman_aligator" }, "styleId": "assetImage" },
                 { "type": "label", "text": "Local asset image", "styleId": "caption" }
               ]
             }
