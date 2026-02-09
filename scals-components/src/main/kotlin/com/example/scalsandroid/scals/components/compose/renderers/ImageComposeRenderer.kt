@@ -33,10 +33,14 @@ private fun RenderImageSource(
 ) {
     when {
         source.activityIndicator == true -> {
-            CircularProgressIndicator(
+            Box(
                 modifier = modifier,
-                color = tintColor?.toComposeColor() ?: Color.Unspecified
-            )
+                contentAlignment = Alignment.Center
+            ) {
+                CircularProgressIndicator(
+                    color = tintColor?.toComposeColor() ?: Color(0xFF007AFF)
+                )
+            }
         }
         else -> {
             val iconIdentifier = source.icon ?: source.sfsymbol
@@ -78,10 +82,14 @@ class ImageComposeRenderer : ComposeNodeRendering {
         when {
             // Activity indicator takes priority
             data.source.activityIndicator == true -> {
-                CircularProgressIndicator(
+                Box(
                     modifier = modifier,
-                    color = data.tintColor?.toComposeColor() ?: Color.Unspecified
-                )
+                    contentAlignment = Alignment.Center
+                ) {
+                    CircularProgressIndicator(
+                        color = data.tintColor?.toComposeColor() ?: Color(0xFF007AFF)
+                    )
+                }
             }
             // URL images with loading/placeholder support
             data.source.url != null -> {
