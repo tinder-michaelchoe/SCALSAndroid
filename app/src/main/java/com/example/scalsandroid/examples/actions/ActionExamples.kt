@@ -38,7 +38,7 @@ private val setStateExample = Example(
     "countDisplay": { "type": "binding", "template": "${'$'}{count}" }
   },
   "root": {
-    "backgroundColor": "#FFFFFF",
+    "backgroundColor": "#FEF7FF",
     "edgeInsets": { "top": 36, "leading": 28, "trailing": 28 },
     "children": [{
       "type": "vstack",
@@ -95,7 +95,7 @@ private val toggleStateExample = Example(
     "statusText": { "type": "binding", "template": "${'$'}{isOn ? 'ON' : 'OFF'}" }
   },
   "root": {
-    "backgroundColor": "#FFFFFF",
+    "backgroundColor": "#FEF7FF",
     "edgeInsets": { "top": 36, "leading": 28, "trailing": 28 },
     "children": [{
       "type": "vstack",
@@ -169,7 +169,7 @@ private val showAlertExample = Example(
     }
   },
   "root": {
-    "backgroundColor": "#FFFFFF",
+    "backgroundColor": "#FEF7FF",
     "edgeInsets": { "top": 36, "leading": 28, "trailing": 28 },
     "children": [{
       "type": "vstack",
@@ -213,7 +213,7 @@ private val dismissExample = Example(
     "close": { "type": "dismiss" }
   },
   "root": {
-    "backgroundColor": "#FFFFFF",
+    "backgroundColor": "#FEF7FF",
     "edgeInsets": { "top": 36, "leading": 28, "trailing": 28 },
     "children": [{
       "type": "vstack",
@@ -256,7 +256,7 @@ private val navigateExample = Example(
     "goToSettings": { "type": "navigate", "destination": "settings" }
   },
   "root": {
-    "backgroundColor": "#FFFFFF",
+    "backgroundColor": "#FEF7FF",
     "edgeInsets": { "top": 36, "leading": 28, "trailing": 28 },
     "children": [{
       "type": "vstack",
@@ -336,7 +336,7 @@ private val sequenceExample = Example(
     "stepText": { "type": "binding", "template": "Step ${'$'}{step}" }
   },
   "root": {
-    "backgroundColor": "#FFFFFF",
+    "backgroundColor": "#FEF7FF",
     "edgeInsets": { "top": 36, "leading": 28, "trailing": 28 },
     "children": [{
       "type": "vstack",
@@ -369,7 +369,7 @@ private val arrayActionsExample = Example(
     "count": { "fontSize": 14, "textColor": "#666666" },
     "field": {
       "fontSize": 16, "textColor": "#000000",
-      "backgroundColor": "#F2F2F7", "cornerRadius": 8,
+      "backgroundColor": "#FEF7FF", "cornerRadius": 8,
       "padding": { "horizontal": 12, "vertical": 12 }
     },
     "addButton": {
@@ -397,7 +397,7 @@ private val arrayActionsExample = Example(
     "countText": { "type": "binding", "template": "${'$'}{items.count} items" }
   },
   "root": {
-    "backgroundColor": "#FFFFFF",
+    "backgroundColor": "#FEF7FF",
     "edgeInsets": { "top": 36, "leading": 28, "trailing": 28 },
     "children": [{
       "type": "vstack",

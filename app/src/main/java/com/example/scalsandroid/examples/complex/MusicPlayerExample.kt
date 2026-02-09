@@ -46,12 +46,12 @@ val musicPlayerExample = Example(
     "volumeSlider": { "tintColor": "#007AFF" },
     "queueButton": {
       "fontSize": 14, "fontWeight": "medium",
-      "backgroundColor": "#F2F2F7", "textColor": "#007AFF",
+      "backgroundColor": "#FEF7FF", "textColor": "#007AFF",
       "cornerRadius": 8, "height": 36, "padding": { "horizontal": 16 }
     },
     "shuffleButton": {
       "width": 44, "height": 44,
-      "backgroundColor": "#F2F2F7", "cornerRadius": 22
+      "backgroundColor": "#FEF7FF", "cornerRadius": 22
     },
     "shuffleButtonActive": {
       "width": 44, "height": 44,
@@ -64,7 +64,7 @@ val musicPlayerExample = Example(
     "queueItem": { "padding": { "vertical": 10 } },
     "queueTitle": { "fontSize": 16, "textColor": "#000000" },
     "queueArtist": { "fontSize": 14, "textColor": "#8E8E93" },
-    "queueImage": { "width": 48, "height": 48, "cornerRadius": 8, "backgroundColor": "#F2F2F7" },
+    "queueImage": { "width": 48, "height": 48, "cornerRadius": 8, "backgroundColor": "#FEF7FF" },
     "queueIcon": { "width": 24, "height": 24, "tintColor": "#007AFF" },
     "nowPlayingBadge": {
       "fontSize": 10, "fontWeight": "bold",
@@ -98,7 +98,7 @@ val musicPlayerExample = Example(
     "playButtonIcon": { "type": "binding", "template": "${'$'}{isPlaying ? 'pause.fill' : 'play.fill'}" }
   },
   "root": {
-    "backgroundColor": "#FFFFFF",
+    "backgroundColor": "#FEF7FF",
     "edgeInsets": { "top": 20 },
     "children": [{
       "type": "vstack",

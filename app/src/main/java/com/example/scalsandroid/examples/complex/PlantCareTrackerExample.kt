@@ -30,13 +30,13 @@ val plantCareTrackerExample = Example(
       "textColor": "#1C1C1E"
     },
     "activityCard": {
-      "backgroundColor": "#F2F2F7",
+      "backgroundColor": "#FEF7FF",
       "cornerRadius": 12,
       "padding": { "all": 12 },
       "width": 100
     },
     "statCard": {
-      "backgroundColor": "#F2F2F7",
+      "backgroundColor": "#FEF7FF",
       "cornerRadius": 12,
       "padding": { "all": 16 }
     },
@@ -63,7 +63,7 @@ val plantCareTrackerExample = Example(
     "baseCard": {
       "cornerRadius": 16,
       "padding": { "all": 16 },
-      "backgroundColor": "#F2F2F7"
+      "backgroundColor": "#FEF7FF"
     },
     "healthyCard": {
       "baseStyle": "baseCard",
@@ -156,7 +156,7 @@ val plantCareTrackerExample = Example(
     }
   },
   "root": {
-    "backgroundColor": "#FFFFFF",
+    "backgroundColor": "#FEF7FF",
     "edgeInsets": { "top": 50 },
     "children": [
       {

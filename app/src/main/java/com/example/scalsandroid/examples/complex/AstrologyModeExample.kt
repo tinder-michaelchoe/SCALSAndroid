@@ -151,7 +151,7 @@ val astrologyModeExample = Example(
       "textAlignment": "center"
     },
     "continueButton": {
-      "backgroundColor": "#FFFFFF",
+      "backgroundColor": "#FEF7FF",
       "cornerRadius": 28,
       "padding": {
         "vertical": 16,

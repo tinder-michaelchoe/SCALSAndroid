@@ -32,7 +32,7 @@ val metMuseumExample = Example(
     "pageTitle": { "fontSize": 24, "fontWeight": "bold", "textColor": "#1a1a1a" },
     "subtitle": { "fontSize": 14, "textColor": "#666666" },
     "sectionTitle": { "fontSize": 16, "fontWeight": "semibold", "textColor": "#333333" },
-    "field": { "fontSize": 16, "textColor": "#000000", "backgroundColor": "#FFFFFF", "cornerRadius": 8, "padding": { "horizontal": 12, "vertical": 10 } },
+    "field": { "fontSize": 16, "textColor": "#000000", "backgroundColor": "#FEF7FF", "cornerRadius": 8, "padding": { "horizontal": 12, "vertical": 10 } },
     "primaryButton": { "backgroundColor": "#C41E3A", "textColor": "#FFFFFF", "cornerRadius": 8, "fontWeight": "semibold", "padding": { "horizontal": 20, "vertical": 12 } },
     "secondaryButton": { "backgroundColor": "#E8E8E8", "textColor": "#333333", "cornerRadius": 8, "padding": { "horizontal": 12, "vertical": 8 } },
     "artworkImage": { "height": 250, "cornerRadius": 8 },
@@ -41,7 +41,7 @@ val metMuseumExample = Example(
     "artworkDetail": { "fontSize": 14, "textColor": "#444444" },
     "detailLabel": { "fontSize": 11, "fontWeight": "semibold", "textColor": "#888888" },
     "helpText": { "fontSize": 12, "textColor": "#888888" },
-    "card": { "backgroundColor": "#FFFFFF", "cornerRadius": 12, "padding": { "horizontal": 16, "vertical": 16 } }
+    "card": { "backgroundColor": "#FEF7FF", "cornerRadius": 12, "padding": { "horizontal": 16, "vertical": 16 } }
   },
   "actions": {
     "fetchArtwork": {
@@ -126,7 +126,7 @@ val metMuseumExample = Example(
     }
   },
   "root": {
-    "backgroundColor": "#F5F5F5",
+    "backgroundColor": "#FEF7FF",
     "edgeInsets": { "top": 40, "leading": 24, "trailing": 24, "bottom": 32 },
     "children": [
       {

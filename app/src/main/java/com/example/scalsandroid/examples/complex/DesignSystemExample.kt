@@ -54,7 +54,7 @@ val designSystemExample = Example(
     }
   },
   "root": {
-    "backgroundColor": "#F9FAFB",
+    "backgroundColor": "#FEF7FF",
     "children": [
       {
         "type": "sectionLayout",

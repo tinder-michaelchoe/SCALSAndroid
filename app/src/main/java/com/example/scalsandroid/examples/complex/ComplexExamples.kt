@@ -39,7 +39,7 @@ private val componentShowcaseExample = Example(
     "secondaryButton": { "fontSize": 16, "fontWeight": "medium", "backgroundColor": "#E5E5EA", "textColor": "#000000", "cornerRadius": 10, "height": 44, "padding": { "horizontal": 20 } },
     "toggleButton": { "fontSize": 14, "fontWeight": "medium", "backgroundColor": "#E5E5EA", "textColor": "#000000", "cornerRadius": 8, "height": 36, "padding": { "horizontal": 16 } },
     "toggleButtonSelected": { "fontSize": 14, "fontWeight": "semibold", "backgroundColor": "#34C759", "textColor": "#FFFFFF", "cornerRadius": 8, "height": 36, "padding": { "horizontal": 16 } },
-    "textFieldStyle": { "fontSize": 16, "fontWeight": "regular", "textColor": "#000000", "backgroundColor": "#F2F2F7", "cornerRadius": 8, "padding": { "horizontal": 12, "vertical": 12 } },
+    "textFieldStyle": { "fontSize": 16, "fontWeight": "regular", "textColor": "#000000", "backgroundColor": "#FEF7FF", "cornerRadius": 8, "padding": { "horizontal": 12, "vertical": 12 } },
     "iconStyle": { "width": 48, "height": 48 },
     "redIconStyle": { "inherits": "iconStyle", "tintColor": "#FF3B30" },
     "orangeIconStyle": { "inherits": "iconStyle", "tintColor": "#FF9500" },
@@ -60,7 +60,7 @@ private val componentShowcaseExample = Example(
     "close": { "type": "dismiss" }
   },
   "root": {
-    "backgroundColor": "#FFFFFF",
+    "backgroundColor": "#FEF7FF",
     "edgeInsets": { "top": 16 },
     "children": [{
       "type": "sectionLayout",
@@ -228,13 +228,13 @@ private val dadJokesExample = Example(
     "revealButton": {
       "fontSize": 16,
       "fontWeight": "medium",
-      "backgroundColor": "#F2F2F7",
+      "backgroundColor": "#FEF7FF",
       "textColor": "#007AFF",
       "cornerRadius": 10,
       "height": 44
     },
     "cardStyle": {
-      "backgroundColor": "#F9F9F9",
+      "backgroundColor": "#FEF7FF",
       "cornerRadius": 16
     }
   },
@@ -255,7 +255,7 @@ private val dadJokesExample = Example(
   },
 
   "root": {
-    "backgroundColor": "#FFFFFF",
+    "backgroundColor": "#FEF7FF",
     "actions": {
       "onAppear": { "type": "fetchJoke" }
     },
@@ -360,7 +360,7 @@ private val taskManagerExample = Example(
     "sectionHeader": { "fontSize": 18, "fontWeight": "semibold", "textColor": "#000000" },
     "inputField": {
       "fontSize": 16, "textColor": "#000000",
-      "backgroundColor": "#F2F2F7", "cornerRadius": 12
+      "backgroundColor": "#FEF7FF", "cornerRadius": 12
     },
     "addButton": {
       "fontSize": 16, "fontWeight": "semibold",
@@ -383,7 +383,7 @@ private val taskManagerExample = Example(
     "addTask": { "type": "addTask" }
   },
   "root": {
-    "backgroundColor": "#FFFFFF",
+    "backgroundColor": "#FEF7FF",
     "edgeInsets": { "top": 20 },
     "children": [{
       "type": "sectionLayout",
@@ -475,7 +475,7 @@ private val shoppingCartExample = Example(
     "screenTitle": { "fontSize": 28, "fontWeight": "bold", "textColor": "#000000" },
     "itemCount": { "fontSize": 14, "textColor": "#8E8E93" },
     "sectionHeader": { "fontSize": 16, "fontWeight": "semibold", "textColor": "#000000" },
-    "productImage": { "width": 80, "height": 80, "backgroundColor": "#F2F2F7", "cornerRadius": 12 },
+    "productImage": { "width": 80, "height": 80, "backgroundColor": "#FEF7FF", "cornerRadius": 12 },
     "productIcon": { "width": 40, "height": 40, "tintColor": "#007AFF" },
     "productName": { "fontSize": 16, "fontWeight": "medium", "textColor": "#000000" },
     "productPrice": { "fontSize": 14, "fontWeight": "semibold", "textColor": "#007AFF" },
@@ -483,13 +483,13 @@ private val shoppingCartExample = Example(
     "quantityValue": { "fontSize": 16, "fontWeight": "semibold", "textColor": "#000000" },
     "quantityButton": {
       "fontSize": 18, "fontWeight": "bold",
-      "backgroundColor": "#F2F2F7", "textColor": "#007AFF",
+      "backgroundColor": "#FEF7FF", "textColor": "#007AFF",
       "cornerRadius": 8, "width": 32, "height": 32
     },
     "removeButton": { "fontSize": 14, "textColor": "#FF3B30" },
     "promoField": {
       "fontSize": 16, "textColor": "#000000",
-      "backgroundColor": "#F2F2F7", "cornerRadius": 10,
+      "backgroundColor": "#FEF7FF", "cornerRadius": 10,
       "padding": { "horizontal": 14, "vertical": 12 }
     },
     "applyButton": {
@@ -515,7 +515,7 @@ private val shoppingCartExample = Example(
     },
     "divider": { "height": 1, "backgroundColor": "#E5E5EA" },
     "cardBackground": {
-      "backgroundColor": "#FFFFFF", "cornerRadius": 16,
+      "backgroundColor": "#FEF7FF", "cornerRadius": 16,
       "padding": { "all": 16 }
     },
     "summaryCard": {
@@ -565,7 +565,7 @@ private val shoppingCartExample = Example(
     "total": { "type": "static", "value": "${'$'}604.76" }
   },
   "root": {
-    "backgroundColor": "#F2F2F7",
+    "backgroundColor": "#FEF7FF",
     "edgeInsets": { "top": 20 },
     "children": [{
       "type": "sectionLayout",

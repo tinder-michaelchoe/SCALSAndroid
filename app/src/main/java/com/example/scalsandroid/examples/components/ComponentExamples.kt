@@ -39,7 +39,7 @@ private val buttonsExample = Example(
     },
     "pill": {
       "fontSize": 14, "fontWeight": "medium",
-      "backgroundColor": "#F2F2F7", "textColor": "#000000",
+      "backgroundColor": "#FEF7FF", "textColor": "#000000",
       "cornerRadius": 20, "height": 36, "padding": { "horizontal": 16 }
     },
     "pillSelected": {
@@ -50,7 +50,7 @@ private val buttonsExample = Example(
     "countLabel": { "fontSize": 14, "textColor": "#666666" },
     "iconButton": {
       "fontSize": 16, "fontWeight": "medium",
-      "backgroundColor": "#F2F2F7", "textColor": "#000000",
+      "backgroundColor": "#FEF7FF", "textColor": "#000000",
       "cornerRadius": 10, "width": 44, "height": 44
     },
     "iconButtonPrimary": {
@@ -60,7 +60,7 @@ private val buttonsExample = Example(
     },
     "verticalButton": {
       "fontSize": 14, "fontWeight": "medium",
-      "backgroundColor": "#F2F2F7", "textColor": "#000000",
+      "backgroundColor": "#FEF7FF", "textColor": "#000000",
       "cornerRadius": 12, "padding": { "vertical": 12, "horizontal": 16 }
     },
     "compactButton": {
@@ -76,7 +76,7 @@ private val buttonsExample = Example(
     "countText": { "type": "binding", "template": "Tapped ${'$'}{tapCount} times" }
   },
   "root": {
-    "backgroundColor": "#FFFFFF",
+    "backgroundColor": "#FEF7FF",
     "children": [{
       "type": "sectionLayout",
       "sectionSpacing": 20,
@@ -191,7 +191,7 @@ private val labelsExample = Example(
     "multiline": { "fontSize": 14, "textColor": "#333333", "numberOfLines": 3 }
   },
   "root": {
-    "backgroundColor": "#FFFFFF",
+    "backgroundColor": "#FEF7FF",
     "edgeInsets": { "top": 36, "leading": 28, "trailing": 28 },
     "children": [{
       "type": "vstack",
@@ -226,7 +226,7 @@ private val textFieldsExample = Example(
     "label": { "fontSize": 14, "fontWeight": "medium", "textColor": "#333333" },
     "field": {
       "fontSize": 16, "textColor": "#000000",
-      "backgroundColor": "#F2F2F7", "cornerRadius": 8,
+      "backgroundColor": "#FEF7FF", "cornerRadius": 8,
       "padding": { "horizontal": 12, "vertical": 12 }
     },
     "preview": { "fontSize": 13, "textColor": "#888888" }
@@ -236,7 +236,7 @@ private val textFieldsExample = Example(
     "emailPreview": { "type": "binding", "template": "Email: ${'$'}{email}" }
   },
   "root": {
-    "backgroundColor": "#FFFFFF",
+    "backgroundColor": "#FEF7FF",
     "edgeInsets": { "top": 36, "leading": 28, "trailing": 28 },
     "children": [{
       "type": "vstack",
@@ -275,7 +275,7 @@ private val togglesExample = Example(
     "orangeTint": { "tintColor": "#FF9500" }
   },
   "root": {
-    "backgroundColor": "#FFFFFF",
+    "backgroundColor": "#FEF7FF",
     "edgeInsets": { "top": 36, "leading": 28, "trailing": 28 },
     "children": [{
       "type": "vstack",
@@ -337,7 +337,7 @@ private val slidersExample = Example(
     "tempText": { "type": "binding", "template": "${'$'}{temperature}F" }
   },
   "root": {
-    "backgroundColor": "#FFFFFF",
+    "backgroundColor": "#FEF7FF",
     "edgeInsets": { "top": 36, "leading": 28, "trailing": 28 },
     "children": [{
       "type": "vstack",
@@ -461,7 +461,7 @@ private val imagesExample = Example(
     }
   },
   "root": {
-    "backgroundColor": "#F2F2F7",
+    "backgroundColor": "#FEF7FF",
     "edgeInsets": { "top": 52 },
     "children": [{
       "type": "sectionLayout",
@@ -614,7 +614,7 @@ private val gradientsExample = Example(
     "caption": { "fontSize": 12, "textColor": "#888888" }
   },
   "root": {
-    "backgroundColor": "#FFFFFF",
+    "backgroundColor": "#FEF7FF",
     "edgeInsets": { "top": 36, "leading": 28, "trailing": 28 },
     "children": [{
       "type": "vstack",
@@ -698,7 +698,7 @@ private val shapesExample = Example(
     "strokedGreen": { "width": 60, "height": 60, "borderColor": "#95E1D3", "borderWidth": 3 },
     "strokedOrange": { "width": 80, "height": 40, "borderColor": "#FFA07A", "borderWidth": 3 },
     "strokedPurple": { "width": 70, "height": 50, "borderColor": "#DDA0DD", "borderWidth": 3 },
-    "cardBackground": { "backgroundColor": "#F2F2F7", "cornerRadius": 16, "padding": { "all": 20 } },
+    "cardBackground": { "backgroundColor": "#FEF7FF", "cornerRadius": 16, "padding": { "all": 20 } },
     "cardTitle": { "fontSize": 18, "fontWeight": "bold", "textColor": "#000000" },
     "cardBody": { "fontSize": 14, "textColor": "#666666" },
     "layer1": { "width": 120, "height": 120, "backgroundColor": "#C8C8FF80" },
@@ -706,7 +706,7 @@ private val shapesExample = Example(
     "overlayText": { "fontSize": 16, "fontWeight": "bold", "textColor": "#FFFFFF" }
   },
   "root": {
-    "backgroundColor": "#FFFFFF",
+    "backgroundColor": "#FEF7FF",
     "edgeInsets": { "top": 56 },
     "children": [{
       "type": "sectionLayout",

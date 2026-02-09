@@ -27,7 +27,7 @@ private val vstackHstackExample = Example(
     "boxLabel": { "fontSize": 12, "fontWeight": "medium", "textColor": "#FFFFFF" }
   },
   "root": {
-    "backgroundColor": "#FFFFFF",
+    "backgroundColor": "#FEF7FF",
     "edgeInsets": { "top": 36, "leading": 28, "trailing": 28 },
     "children": [{
       "type": "vstack",
@@ -79,7 +79,7 @@ private val zstackExample = Example(
     }
   },
   "root": {
-    "backgroundColor": "#FFFFFF",
+    "backgroundColor": "#FEF7FF",
     "edgeInsets": { "top": 36, "leading": 28, "trailing": 28 },
     "children": [{
       "type": "vstack",
@@ -148,7 +148,7 @@ private val nestedExample = Example(
     "badge": { "fontSize": 10, "fontWeight": "bold", "textColor": "#FFFFFF", "backgroundColor": "#FF3B30", "cornerRadius": 8, "padding": { "horizontal": 6, "vertical": 3 } }
   },
   "root": {
-    "backgroundColor": "#FFFFFF",
+    "backgroundColor": "#FEF7FF",
     "edgeInsets": { "top": 36 },
     "children": [{
       "type": "sectionLayout",
@@ -328,10 +328,10 @@ private val alignmentExample = Example(
     "boxWide": { "width": 120, "height": 40, "backgroundColor": "#FF9500", "cornerRadius": 8 },
     "boxTall": { "width": 40, "height": 80, "backgroundColor": "#FF2D55", "cornerRadius": 8 },
     "boxBig": { "width": 100, "height": 100, "backgroundColor": "#007AFF", "cornerRadius": 12 },
-    "containerBg": { "backgroundColor": "#F2F2F7", "cornerRadius": 12, "padding": { "all": 16 }, "minHeight": 120 }
+    "containerBg": { "backgroundColor": "#FEF7FF", "cornerRadius": 12, "padding": { "all": 16 }, "minHeight": 120 }
   },
   "root": {
-    "backgroundColor": "#FFFFFF",
+    "backgroundColor": "#FEF7FF",
     "edgeInsets": { "top": 36 },
     "children": [{
       "type": "sectionLayout",
@@ -659,13 +659,13 @@ private val spacerExample = Example(
       "textAlignment": "center"
     },
     "alignmentContainer": {
-      "backgroundColor": "#F2F2F7",
+      "backgroundColor": "#FEF7FF",
       "cornerRadius": 12,
       "padding": { "all": 16 },
       "minHeight": 120
     },
     "verticalAlignmentContainer": {
-      "backgroundColor": "#F2F2F7",
+      "backgroundColor": "#FEF7FF",
       "cornerRadius": 12,
       "padding": { "all": 16 },
       "minHeight": 200
@@ -689,7 +689,7 @@ private val spacerExample = Example(
     }
   },
   "root": {
-    "backgroundColor": "#FFFFFF",
+    "backgroundColor": "#FEF7FF",
     "edgeInsets": { "top": 36 },
     "children": [{
       "type": "sectionLayout",
@@ -1070,7 +1070,7 @@ private val sectionLayoutExample = Example(
       "tintColor": "#FFFFFF"
     },
     "listItemContainer": {
-      "backgroundColor": "#F2F2F7",
+      "backgroundColor": "#FEF7FF",
       "cornerRadius": 12,
       "padding": { "all": 16 }
     },
@@ -1101,7 +1101,7 @@ private val sectionLayoutExample = Example(
   },
 
   "root": {
-    "backgroundColor": "#FFFFFF",
+    "backgroundColor": "#FEF7FF",
     "colorScheme": "system",
     "children": [
       {
@@ -1376,7 +1376,7 @@ private val sectionListExample = Example(
     "iconPink": { "width": 24, "height": 24, "tintColor": "#FF2D55" }
   },
   "root": {
-    "backgroundColor": "#FFFFFF",
+    "backgroundColor": "#FEF7FF",
     "edgeInsets": { "top": 36 },
     "children": [{
       "type": "sectionLayout",
@@ -1597,12 +1597,12 @@ private val sectionGridExample = Example(
   "version": "1.0",
   "styles": {
     "header": { "fontSize": 22, "fontWeight": "bold", "textColor": "#000000" },
-    "gridItem": { "height": 100, "backgroundColor": "#F2F2F7", "cornerRadius": 12, "padding": { "all": 16 } },
+    "gridItem": { "height": 100, "backgroundColor": "#FEF7FF", "cornerRadius": 12, "padding": { "all": 16 } },
     "itemIcon": { "width": 32, "height": 32, "tintColor": "#007AFF" },
     "itemLabel": { "fontSize": 12, "fontWeight": "medium", "textColor": "#333333" }
   },
   "root": {
-    "backgroundColor": "#FFFFFF",
+    "backgroundColor": "#FEF7FF",
     "edgeInsets": { "top": 36, "bottom": 22 },
     "children": [{
       "type": "sectionLayout",
@@ -1649,7 +1649,7 @@ private val sectionFlowExample = Example(
     "header": { "fontSize": 22, "fontWeight": "bold", "textColor": "#000000" },
     "tag": {
       "fontSize": 14, "fontWeight": "medium",
-      "backgroundColor": "#F2F2F7", "textColor": "#333333",
+      "backgroundColor": "#FEF7FF", "textColor": "#333333",
       "cornerRadius": 16, "height": 32, "padding": { "horizontal": 14 }
     },
     "tagSelected": {
@@ -1659,7 +1659,7 @@ private val sectionFlowExample = Example(
     }
   },
   "root": {
-    "backgroundColor": "#FFFFFF",
+    "backgroundColor": "#FEF7FF",
     "edgeInsets": { "top": 36 },
     "children": [{
       "type": "sectionLayout",
@@ -1713,7 +1713,7 @@ private val sectionHorizontalExample = Example(
   "state": { "currentPage": 0 },
   "styles": {
     "header": { "fontSize": 22, "fontWeight": "bold", "textColor": "#000000", "padding": { "horizontal": 20 } },
-    "card": { "width": 140, "height": 180, "backgroundColor": "#F2F2F7", "cornerRadius": 12 },
+    "card": { "width": 140, "height": 180, "backgroundColor": "#FEF7FF", "cornerRadius": 12 },
     "cardImage": { "width": 140, "height": 100, "cornerRadius": 12 },
     "cardTitle": { "fontSize": 14, "fontWeight": "semibold", "textColor": "#000000" },
     "cardSubtitle": { "fontSize": 12, "textColor": "#888888" },
@@ -1750,7 +1750,7 @@ private val sectionHorizontalExample = Example(
     }
   },
   "root": {
-    "backgroundColor": "#F2F2F7",
+    "backgroundColor": "#FEF7FF",
     "scrollable": true,
     "edgeInsets": { "top": 52 },
     "children": [{

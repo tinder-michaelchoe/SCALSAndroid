@@ -30,7 +30,7 @@ private val staticDataExample = Example(
     "author": { "type": "static", "value": "Your Name" }
   },
   "root": {
-    "backgroundColor": "#FFFFFF",
+    "backgroundColor": "#FEF7FF",
     "edgeInsets": { "top": 36, "leading": 28, "trailing": 28 },
     "children": [{
       "type": "vstack",
@@ -82,7 +82,7 @@ private val bindingDataExample = Example(
     "label": { "fontSize": 14, "fontWeight": "medium", "textColor": "#888888" },
     "field": {
       "fontSize": 16, "textColor": "#000000",
-      "backgroundColor": "#F2F2F7", "cornerRadius": 8,
+      "backgroundColor": "#FEF7FF", "cornerRadius": 8,
       "padding": { "horizontal": 12, "vertical": 12 }
     },
     "preview": { "fontSize": 14, "textColor": "#007AFF" }
@@ -92,7 +92,7 @@ private val bindingDataExample = Example(
     "emailPreview": { "type": "binding", "template": "Email: ${'$'}{email}" }
   },
   "root": {
-    "backgroundColor": "#FFFFFF",
+    "backgroundColor": "#FEF7FF",
     "edgeInsets": { "top": 36, "leading": 28, "trailing": 28 },
     "children": [{
       "type": "vstack",
@@ -191,7 +191,7 @@ private val expressionsExample = Example(
     "code": {
       "fontSize": 13, "fontFamily": "Menlo",
       "textColor": "#D32F2F",
-      "backgroundColor": "#F2F2F7", "cornerRadius": 6,
+      "backgroundColor": "#FEF7FF", "cornerRadius": 6,
       "padding": { "horizontal": 8, "vertical": 4 }
     },
     "button": {
@@ -226,7 +226,7 @@ private val expressionsExample = Example(
     "scoreCalc": { "type": "binding", "template": "Double: ${'$'}{(score * 2)}, Half: ${'$'}{(score / 2)}, Mod 10: ${'$'}{(score % 10)}" }
   },
   "root": {
-    "backgroundColor": "#F2F2F7",
+    "backgroundColor": "#FEF7FF",
     "children": [{
       "type": "sectionLayout",
       "sectionSpacing": 20,

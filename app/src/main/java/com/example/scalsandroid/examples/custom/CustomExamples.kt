@@ -184,7 +184,7 @@ private val doubleDateExample = Example(
           "fontSize": 17,
           "fontWeight": "semibold",
           "textColor": "#000000",
-          "backgroundColor": "#FFFFFF",
+          "backgroundColor": "#FEF7FF",
           "cornerRadius": 28,
           "height": 56
         },
@@ -218,7 +218,7 @@ private val feedbackSurveyExample = Example(
         "selectedOption": ""
       },
       "root": {
-        "backgroundColor": "#FFFFFF",
+        "backgroundColor": "#FEF7FF",
         "cornerRadius": 24,
         "children": [
           {
@@ -391,7 +391,7 @@ private val feedbackSurveyExample = Example(
           "textAlignment": "leading"
         },
         "optionsContainer": {
-          "backgroundColor": "#F5F5F5",
+          "backgroundColor": "#FEF7FF",
           "cornerRadius": 16
         },
         "optionText": {
@@ -457,7 +457,7 @@ private val photoTouchUpExample = Example(
     {
       "id": "photoTouchUp",
       "root": {
-        "backgroundColor": "#FFFFFF",
+        "backgroundColor": "#FEF7FF",
         "children": [
           {
             "type": "vstack",

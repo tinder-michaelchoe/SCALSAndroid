@@ -32,12 +32,12 @@ private val basicStylesExample = Example(
     },
     "rounded": {
       "fontSize": 16, "textColor": "#000000",
-      "backgroundColor": "#F2F2F7", "cornerRadius": 20,
+      "backgroundColor": "#FEF7FF", "cornerRadius": 20,
       "padding": { "horizontal": 20, "vertical": 10 }
     }
   },
   "root": {
-    "backgroundColor": "#FFFFFF",
+    "backgroundColor": "#FEF7FF",
     "edgeInsets": { "top": 36, "leading": 28, "trailing": 28 },
     "children": [{
       "type": "vstack",
@@ -92,7 +92,7 @@ private val styleInheritanceExample = Example(
     },
 
     "baseCard": {
-      "backgroundColor": "#F2F2F7",
+      "backgroundColor": "#FEF7FF",
       "cornerRadius": 12,
       "padding": { "horizontal": 16, "vertical": 20 }
     },
@@ -160,7 +160,7 @@ private val styleInheritanceExample = Example(
     }
   },
   "root": {
-    "backgroundColor": "#FFFFFF",
+    "backgroundColor": "#FEF7FF",
     "edgeInsets": { "top": 44 },
     "children": [{
       "type": "sectionLayout",
@@ -270,7 +270,7 @@ private val conditionalStylesExample = Example(
   "styles": {
     "title": { "fontSize": 18, "fontWeight": "bold", "textColor": "#000000" },
     "normalCard": {
-      "backgroundColor": "#F2F2F7", "cornerRadius": 12,
+      "backgroundColor": "#FEF7FF", "cornerRadius": 12,
       "padding": { "all": 20 }
     },
     "activeCard": {
@@ -297,7 +297,7 @@ private val conditionalStylesExample = Example(
     "statusText": { "type": "binding", "template": "${'$'}{isActive ? 'Card is ACTIVE' : 'Card is inactive'}" }
   },
   "root": {
-    "backgroundColor": "#FFFFFF",
+    "backgroundColor": "#FEF7FF",
     "edgeInsets": { "top": 36, "leading": 28, "trailing": 28 },
     "children": [{
       "type": "vstack",
@@ -333,7 +333,7 @@ private val shadowsExample = Example(
   "styles": {
     "title": { "fontSize": 18, "fontWeight": "bold", "textColor": "#000000" },
     "card": {
-      "backgroundColor": "#FFFFFF",
+      "backgroundColor": "#FEF7FF",
       "cornerRadius": 12,
       "width": { "fractional": 0.8 },
       "padding": { "horizontal": 16, "vertical": 24 }
@@ -399,7 +399,7 @@ private val shadowsExample = Example(
     }
   },
   "root": {
-    "backgroundColor": "#F5F5F5",
+    "backgroundColor": "#FEF7FF",
     "children": [{
       "type": "sectionLayout",
       "sections": [
@@ -536,7 +536,7 @@ private val fractionalSizingExample = Example(
     }
   },
   "root": {
-    "backgroundColor": "#F5F5F5",
+    "backgroundColor": "#FEF7FF",
     "edgeInsets": { "top": 36, "leading": 28, "trailing": 28, "bottom": 36 },
     "children": [{
       "type": "vstack",
