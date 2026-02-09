@@ -8,6 +8,7 @@ data class ImagePlaceholder(
     val icon: String? = null,
     val url: String? = null,
     val asset: String? = null,
+    val activityIndicator: Boolean? = null,
 )
 
 @Serializable
@@ -18,5 +19,5 @@ data class ImageSource(
     val asset: String? = null,
     val activityIndicator: Boolean? = null,
     val placeholder: ImagePlaceholder? = null,
-    val loading: Boolean? = null,
+    val loading: ImagePlaceholder? = null,
 )

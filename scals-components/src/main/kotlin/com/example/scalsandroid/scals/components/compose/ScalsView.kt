@@ -2,10 +2,14 @@ package com.example.scalsandroid.scals.components.compose
 
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Column
+import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.fillMaxWidth
+import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.rememberScrollState
 import androidx.compose.foundation.verticalScroll
+import androidx.compose.material3.Button
+import androidx.compose.material3.ButtonDefaults
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Surface
 import androidx.compose.material3.Text
@@ -14,6 +18,8 @@ import androidx.compose.runtime.DisposableEffect
 import androidx.compose.runtime.remember
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.platform.LocalClipboardManager
+import androidx.compose.ui.text.AnnotatedString
 import androidx.compose.ui.text.font.FontFamily
 import androidx.compose.ui.unit.dp
 import com.example.scalsandroid.scals.actions.ActionContext
@@ -61,6 +67,21 @@ private sealed interface ParseResult {
 
 @Composable
 private fun ErrorView(error: Exception, json: String, modifier: Modifier = Modifier) {
+    val clipboardManager = LocalClipboardManager.current
+
+    val errorText = buildString {
+        appendLine("⚠️ Failed to parse SCALS JSON")
+        appendLine()
+        appendLine("${error.javaClass.simpleName}: ${error.message}")
+        if (error.cause != null) {
+            appendLine()
+            appendLine("Caused by: ${error.cause?.message}")
+        }
+        appendLine()
+        appendLine("Stack trace:")
+        appendLine(error.stackTraceToString())
+    }
+
     Column(
         modifier = modifier
             .fillMaxWidth()
@@ -73,6 +94,20 @@ private fun ErrorView(error: Exception, json: String, modifier: Modifier = Modif
             style = MaterialTheme.typography.titleMedium,
             color = Color(0xFFC62828)
         )
+
+        Spacer(modifier = Modifier.height(12.dp))
+
+        Button(
+            onClick = {
+                clipboardManager.setText(AnnotatedString(errorText))
+            },
+            colors = ButtonDefaults.buttonColors(
+                containerColor = Color(0xFFD32F2F)
+            )
+        ) {
+            Text("Copy Error to Clipboard")
+        }
+
         Text(
             text = "\n${error.javaClass.simpleName}: ${error.message}",
             style = MaterialTheme.typography.bodyMedium,
