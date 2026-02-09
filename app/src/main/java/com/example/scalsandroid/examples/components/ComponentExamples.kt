@@ -288,7 +288,7 @@ private val togglesExample = Example(
           "children": [
             { "type": "label", "text": "Notifications", "styleId": "rowLabel" },
             { "type": "spacer" },
-            { "type": "toggle", "bind": "notifications", "styleId": "greenTint" }
+            { "type": "toggle", "binding": "notifications", "styleId": "greenTint" }
           ]
         },
         {
@@ -296,7 +296,7 @@ private val togglesExample = Example(
           "children": [
             { "type": "label", "text": "Dark Mode", "styleId": "rowLabel" },
             { "type": "spacer" },
-            { "type": "toggle", "bind": "darkMode", "styleId": "purpleTint" }
+            { "type": "toggle", "binding": "darkMode", "styleId": "purpleTint" }
           ]
         },
         {
@@ -304,7 +304,7 @@ private val togglesExample = Example(
           "children": [
             { "type": "label", "text": "Auto Save", "styleId": "rowLabel" },
             { "type": "spacer" },
-            { "type": "toggle", "bind": "autoSave", "styleId": "orangeTint" }
+            { "type": "toggle", "binding": "autoSave", "styleId": "orangeTint" }
           ]
         },
         { "type": "spacer" }
@@ -356,7 +356,7 @@ private val slidersExample = Example(
                 { "type": "label", "dataSourceId": "volumeText", "styleId": "value" }
               ]
             },
-            { "type": "slider", "bind": "volume", "styleId": "blueTint" }
+            { "type": "slider", "binding": "volume", "styleId": "blueTint" }
           ]
         },
         {
@@ -370,7 +370,7 @@ private val slidersExample = Example(
                 { "type": "label", "dataSourceId": "brightnessText", "styleId": "value" }
               ]
             },
-            { "type": "slider", "bind": "brightness", "styleId": "orangeTint" }
+            { "type": "slider", "binding": "brightness", "styleId": "orangeTint" }
           ]
         },
         {
@@ -384,7 +384,7 @@ private val slidersExample = Example(
                 { "type": "label", "dataSourceId": "tempText", "styleId": "value" }
               ]
             },
-            { "type": "slider", "bind": "temperature", "minValue": 60, "maxValue": 90, "styleId": "redTint" }
+            { "type": "slider", "binding": "temperature", "minValue": 60, "maxValue": 90, "styleId": "redTint" }
           ]
         },
         { "type": "spacer" }
