@@ -1,6 +1,7 @@
 package com.example.scalsandroid.scals.components.nodes
 
 import com.example.scalsandroid.scals.document.ActionBinding
+import com.example.scalsandroid.scals.document.ImagePlaceholder
 import com.example.scalsandroid.scals.document.ImageSource
 import com.example.scalsandroid.scals.ir.IR
 import com.example.scalsandroid.scals.ir.RenderNodeData
@@ -10,8 +11,8 @@ data class ImageNode(
     override val id: String? = null,
     override val styleId: String? = null,
     val source: ImageSource,
-    val placeholder: ImageSource? = null,
-    val loading: ImageSource? = null,
+    val placeholder: ImagePlaceholder? = null,
+    val loading: ImagePlaceholder? = null,
     val onTap: ActionBinding? = null,
     val tintColor: IR.Color? = null,
     val backgroundColor: IR.Color? = null,
