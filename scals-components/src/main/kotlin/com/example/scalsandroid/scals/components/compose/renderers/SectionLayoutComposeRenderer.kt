@@ -1,6 +1,8 @@
 package com.example.scalsandroid.scals.components.compose.renderers
 
 import androidx.compose.foundation.layout.Arrangement
+import androidx.compose.foundation.layout.Box
+import androidx.compose.foundation.layout.PaddingValues
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.items
@@ -32,8 +34,13 @@ class SectionLayoutComposeRenderer : ComposeNodeRendering {
             modifier = Modifier.applyContainerStyle(backgroundColor = data.backgroundColor)
         }
 
+        // Get contentInsets from the first section if available (assuming all sections share same config)
+        val contentPadding = data.sections.firstOrNull()?.config?.contentInsets?.toPaddingValues()
+            ?: PaddingValues(0.dp)
+
         LazyColumn(
             modifier = modifier,
+            contentPadding = contentPadding,
             verticalArrangement = Arrangement.spacedBy(data.sectionSpacing.dp),
         ) {
             for (section in data.sections) {

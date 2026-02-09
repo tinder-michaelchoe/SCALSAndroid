@@ -18,6 +18,7 @@ import androidx.compose.ui.text.font.FontFamily
 import androidx.compose.ui.unit.dp
 import com.example.scalsandroid.scals.actions.ActionContext
 import com.example.scalsandroid.scals.components.compose.extensions.toComposeColor
+import com.example.scalsandroid.scals.components.compose.extensions.toComposePaddingValues
 import com.example.scalsandroid.scals.components.compose.rendering.ComposeRenderContext
 import com.example.scalsandroid.scals.components.manifests.CoreManifest
 import com.example.scalsandroid.scals.components.manifests.ScalsRegistries
@@ -188,20 +189,29 @@ private fun ScalsViewContent(
     }
 
     val backgroundColor = renderTree.root.backgroundColor
+    val rootPadding = renderTree.root.edgeInsets?.toComposePaddingValues() ?: androidx.compose.foundation.layout.PaddingValues(0.dp)
 
     if (backgroundColor != null) {
         Surface(
             modifier = modifier,
             color = backgroundColor.toComposeColor(),
         ) {
-            Column(modifier = Modifier.fillMaxWidth()) {
+            Column(
+                modifier = Modifier
+                    .fillMaxWidth()
+                    .padding(rootPadding)
+            ) {
                 for (child in renderTree.root.children) {
                     renderContext.render(child)
                 }
             }
         }
     } else {
-        Column(modifier = modifier.fillMaxWidth()) {
+        Column(
+            modifier = modifier
+                .fillMaxWidth()
+                .padding(rootPadding)
+        ) {
             for (child in renderTree.root.children) {
                 renderContext.render(child)
             }
