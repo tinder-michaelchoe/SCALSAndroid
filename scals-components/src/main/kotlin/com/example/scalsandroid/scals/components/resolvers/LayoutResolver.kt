@@ -190,8 +190,8 @@ class LayoutResolver(
     private fun resolveSpacerNode(spacer: Spacer): NodeResolutionResult {
         val node = SpacerNode(
             minLength = spacer.minLength,
-            width = spacer.width,
-            height = spacer.height,
+            width = spacer.width?.toIR(),
+            height = spacer.height?.toIR(),
         )
         return NodeResolutionResult(RenderNode(node))
     }

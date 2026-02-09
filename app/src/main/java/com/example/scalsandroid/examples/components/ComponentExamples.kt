@@ -201,6 +201,8 @@ private val labelsExample = Example(
         { "type": "label", "text": "Title Label", "styleId": "title" },
         { "type": "label", "text": "Body text with regular weight and dark gray color.", "styleId": "body" },
         { "type": "label", "text": "Caption - smaller and lighter", "styleId": "caption" },
+        { "type": "hstack", "children": [{ "type": "label", "text": "Left Aligned", "styleId": "body" }, { "type": "spacer" }] },
+        { "type": "hstack", "children": [{ "type": "spacer" }, { "type": "label", "text": "Right Aligned", "styleId": "body" }] },
         { "type": "hstack", "children": [{ "type": "spacer" }, { "type": "label", "text": "Centered Text", "styleId": "centered" }, { "type": "spacer" }] },
         { "type": "label", "text": "This is a multiline label that can wrap to multiple lines when the text is too long to fit on a single line.", "styleId": "multiline" },
         { "type": "spacer" }

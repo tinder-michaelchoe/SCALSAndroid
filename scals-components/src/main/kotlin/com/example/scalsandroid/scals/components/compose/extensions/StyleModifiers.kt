@@ -25,11 +25,6 @@ fun Modifier.applyContainerStyle(
 ): Modifier {
     var m = this
 
-    // Padding
-    if (padding != null && !padding.isEmpty) {
-        m = m.padding(padding.toPaddingValues())
-    }
-
     // Shadow (must be before clip)
     if (shadow != null && shadow.radius > 0) {
         val shape = if (cornerRadius > 0) RoundedCornerShape(cornerRadius.dp) else RoundedCornerShape(0.dp)
@@ -59,6 +54,11 @@ fun Modifier.applyContainerStyle(
             color = border.color.toComposeColor(),
             shape = shape,
         )
+    }
+
+    // Padding (applied after background so it's inside the colored area)
+    if (padding != null && !padding.isEmpty) {
+        m = m.padding(padding.toPaddingValues())
     }
 
     // Dimensions

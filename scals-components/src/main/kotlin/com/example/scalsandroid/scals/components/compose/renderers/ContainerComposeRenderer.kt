@@ -3,7 +3,9 @@ package com.example.scalsandroid.scals.components.compose.renderers
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
+import androidx.compose.foundation.layout.ColumnScope
 import androidx.compose.foundation.layout.Row
+import androidx.compose.foundation.layout.RowScope
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
@@ -13,6 +15,7 @@ import com.example.scalsandroid.scals.components.compose.rendering.ComposeNodeRe
 import com.example.scalsandroid.scals.components.compose.rendering.ComposeRenderContext
 import com.example.scalsandroid.scals.components.nodes.ContainerNode
 import com.example.scalsandroid.scals.components.nodes.RenderNodeKinds
+import com.example.scalsandroid.scals.components.nodes.SpacerNode
 import com.example.scalsandroid.scals.document.LayoutType
 import com.example.scalsandroid.scals.ir.IR
 import com.example.scalsandroid.scals.ir.RenderNode
@@ -47,7 +50,7 @@ class ContainerComposeRenderer : ComposeNodeRendering {
                     horizontalAlignment = data.alignment.horizontal.toComposeHorizontalAlignment(),
                 ) {
                     for (child in data.children) {
-                        context.render(child)
+                        renderChildInColumn(child, context)
                     }
                 }
             }
@@ -58,7 +61,7 @@ class ContainerComposeRenderer : ComposeNodeRendering {
                     verticalAlignment = data.alignment.vertical.toComposeVerticalAlignment(),
                 ) {
                     for (child in data.children) {
-                        context.render(child)
+                        renderChildInRow(child, context)
                     }
                 }
             }
@@ -99,4 +102,64 @@ private fun IR.Alignment.toComposeAlignment(): Alignment = when {
     horizontal == IR.HorizontalAlignment.CENTER && vertical == IR.VerticalAlignment.BOTTOM -> Alignment.BottomCenter
     horizontal == IR.HorizontalAlignment.TRAILING && vertical == IR.VerticalAlignment.BOTTOM -> Alignment.BottomEnd
     else -> Alignment.Center
+}
+
+/**
+ * Render a child node in a Row context, applying weight modifiers for spacers
+ */
+@Composable
+private fun RowScope.renderChildInRow(child: RenderNode, context: ComposeRenderContext) {
+    val spacerData = child.data<SpacerNode>()
+
+    if (spacerData != null) {
+        // Determine weight for spacer
+        val weight = when (val w = spacerData.width) {
+            is IR.DimensionValue.Fractional -> w.value.toFloat()
+            is IR.DimensionValue.Absolute -> null // Fixed width, no weight
+            null -> 1f // No width specified = flexible spacer (like SwiftUI)
+        }
+
+        if (weight != null) {
+            // Apply weight modifier in RowScope for flexible spacers
+            Box(modifier = Modifier.weight(weight)) {
+                context.render(child)
+            }
+        } else {
+            // Fixed width spacer
+            context.render(child)
+        }
+    } else {
+        // Not a spacer - regular rendering
+        context.render(child)
+    }
+}
+
+/**
+ * Render a child node in a Column context, applying weight modifiers for spacers
+ */
+@Composable
+private fun ColumnScope.renderChildInColumn(child: RenderNode, context: ComposeRenderContext) {
+    val spacerData = child.data<SpacerNode>()
+
+    if (spacerData != null) {
+        // Determine weight for spacer
+        val weight = when (val h = spacerData.height) {
+            is IR.DimensionValue.Fractional -> h.value.toFloat()
+            is IR.DimensionValue.Absolute -> null // Fixed height, no weight
+            null -> 1f // No height specified = flexible spacer (like SwiftUI)
+        }
+
+        if (weight != null) {
+            // Apply weight modifier in ColumnScope for flexible spacers
+            Box(modifier = Modifier.weight(weight)) {
+                context.render(child)
+            }
+        } else {
+            // Fixed height spacer
+            context.render(child)
+        }
+    } else {
+        // Not a spacer - regular rendering
+        context.render(child)
+    }
 }

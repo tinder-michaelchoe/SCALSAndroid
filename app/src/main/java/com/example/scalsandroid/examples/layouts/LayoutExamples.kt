@@ -673,7 +673,7 @@ private val spacerExample = Example(
     "alignmentBox": {
       "backgroundColor": "#34C759",
       "cornerRadius": 8,
-      "padding": { "vertical": 8, "horizontal": 12 }
+      "padding": { "vertical": 12, "horizontal": 16 }
     },
     "alignmentLabel": {
       "fontSize": 12,

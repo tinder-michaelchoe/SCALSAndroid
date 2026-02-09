@@ -5,6 +5,6 @@ import kotlinx.serialization.Serializable
 @Serializable
 data class Spacer(
     val minLength: Double? = null,
-    val width: Double? = null,
-    val height: Double? = null,
+    val width: DimensionValue? = null,
+    val height: DimensionValue? = null,
 ) : LayoutNode
