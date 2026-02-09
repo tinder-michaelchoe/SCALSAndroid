@@ -22,3 +22,4 @@ dependencyResolutionManagement {
 rootProject.name = "SCALSAndroid"
 include(":app")
 include(":scals-core")
+include(":scals-components")
