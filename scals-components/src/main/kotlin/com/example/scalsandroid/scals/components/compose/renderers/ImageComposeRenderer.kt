@@ -1,5 +1,6 @@
 package com.example.scalsandroid.scals.components.compose.renderers
 
+import androidx.compose.material3.CircularProgressIndicator
 import androidx.compose.material3.Icon
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
@@ -37,26 +38,37 @@ class ImageComposeRenderer : ComposeNodeRendering {
             maxHeight = data.maxHeight,
         )
 
-        // Prioritize icon over sfsymbol for cross-platform compatibility
-        val iconIdentifier = data.source.icon ?: data.source.sfsymbol
-        val icon = IconResolver.resolve(iconIdentifier)
-
         when {
-            icon != null -> {
-                Icon(
-                    imageVector = icon,
-                    contentDescription = null,
+            // Activity indicator takes priority
+            data.source.activityIndicator == true -> {
+                CircularProgressIndicator(
                     modifier = modifier,
-                    tint = data.tintColor?.toComposeColor() ?: Color.Unspecified
+                    color = data.tintColor?.toComposeColor() ?: Color.Unspecified
                 )
             }
-            data.source.url != null -> {
-                AsyncImage(
-                    model = data.source.url,
-                    contentDescription = null,
-                    modifier = modifier,
-                    contentScale = ContentScale.Fit,
-                )
+            // Prioritize icon over sfsymbol for cross-platform compatibility
+            else -> {
+                val iconIdentifier = data.source.icon ?: data.source.sfsymbol
+                val icon = IconResolver.resolve(iconIdentifier)
+
+                when {
+                    icon != null -> {
+                        Icon(
+                            imageVector = icon,
+                            contentDescription = null,
+                            modifier = modifier,
+                            tint = data.tintColor?.toComposeColor() ?: Color.Unspecified
+                        )
+                    }
+                    data.source.url != null -> {
+                        AsyncImage(
+                            model = data.source.url,
+                            contentDescription = null,
+                            modifier = modifier,
+                            contentScale = ContentScale.Fit,
+                        )
+                    }
+                }
             }
         }
     }
