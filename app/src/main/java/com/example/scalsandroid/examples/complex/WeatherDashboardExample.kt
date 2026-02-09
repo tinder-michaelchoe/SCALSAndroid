@@ -183,7 +183,7 @@ val weatherDashboardExample = Example(
                     {
                       "type": "button",
                       "actions": { "onTap": "close" },
-                      "children": [{ "type": "image", "image": { "sfsymbol": "xmark.circle.fill" }, "styleId": "closeButton" }]
+                      "children": [{ "type": "image", "image": { "icon": "CancelFilled" }, "styleId": "closeButton" }]
                     }
                   ]
                 }
@@ -211,7 +211,7 @@ val weatherDashboardExample = Example(
                       ]
                     },
                     { "type": "spacer" },
-                    { "type": "image", "image": { "sfsymbol": "sun.max.fill" }, "styleId": "weatherIcon" }
+                    { "type": "image", "image": { "icon": "Sunny" }, "styleId": "weatherIcon" }
                   ]
                 }
               ]
@@ -223,7 +223,7 @@ val weatherDashboardExample = Example(
                 {
                   "type": "hstack", "spacing": 12, "styleId": "statCard",
                   "children": [
-                    { "type": "image", "image": { "sfsymbol": "humidity.fill" }, "styleId": "statIcon" },
+                    { "type": "image", "image": { "icon": "Humidity" }, "styleId": "statIcon" },
                     {
                       "type": "vstack", "spacing": 2, "alignment": "leading",
                       "children": [
@@ -236,7 +236,7 @@ val weatherDashboardExample = Example(
                 {
                   "type": "hstack", "spacing": 12, "styleId": "statCard",
                   "children": [
-                    { "type": "image", "image": { "sfsymbol": "wind" }, "styleId": "statIcon" },
+                    { "type": "image", "image": { "icon": "Wind" }, "styleId": "statIcon" },
                     {
                       "type": "vstack", "spacing": 2, "alignment": "leading",
                       "children": [
@@ -249,7 +249,7 @@ val weatherDashboardExample = Example(
                 {
                   "type": "hstack", "spacing": 12, "styleId": "statCard",
                   "children": [
-                    { "type": "image", "image": { "sfsymbol": "sun.max.fill" }, "styleId": "statIcon" },
+                    { "type": "image", "image": { "icon": "Sunny" }, "styleId": "statIcon" },
                     {
                       "type": "vstack", "spacing": 2, "alignment": "leading",
                       "children": [
@@ -262,7 +262,7 @@ val weatherDashboardExample = Example(
                 {
                   "type": "hstack", "spacing": 12, "styleId": "statCard",
                   "children": [
-                    { "type": "image", "image": { "sfsymbol": "eye.fill" }, "styleId": "statIcon" },
+                    { "type": "image", "image": { "icon": "Visibility" }, "styleId": "statIcon" },
                     {
                       "type": "vstack", "spacing": 2, "alignment": "leading",
                       "children": [
@@ -283,7 +283,7 @@ val weatherDashboardExample = Example(
                   "type": "vstack", "spacing": 8, "alignment": "center", "styleId": "hourCardSelected",
                   "children": [
                     { "type": "label", "dataSourceId": "hour0Label", "styleId": "hourText" },
-                    { "type": "image", "image": { "sfsymbol": "sun.max.fill" }, "styleId": "hourIcon" },
+                    { "type": "image", "image": { "icon": "Sunny" }, "styleId": "hourIcon" },
                     { "type": "label", "dataSourceId": "hour0Temp", "styleId": "hourTemp" }
                   ]
                 },
@@ -291,7 +291,7 @@ val weatherDashboardExample = Example(
                   "type": "vstack", "spacing": 8, "alignment": "center", "styleId": "hourCard",
                   "children": [
                     { "type": "label", "dataSourceId": "hour1Label", "styleId": "hourText" },
-                    { "type": "image", "image": { "sfsymbol": "cloud.sun.fill" }, "styleId": "hourIcon" },
+                    { "type": "image", "image": { "icon": "Cloudy" }, "styleId": "hourIcon" },
                     { "type": "label", "dataSourceId": "hour1Temp", "styleId": "hourTemp" }
                   ]
                 },
@@ -299,7 +299,7 @@ val weatherDashboardExample = Example(
                   "type": "vstack", "spacing": 8, "alignment": "center", "styleId": "hourCard",
                   "children": [
                     { "type": "label", "dataSourceId": "hour2Label", "styleId": "hourText" },
-                    { "type": "image", "image": { "sfsymbol": "cloud.fill" }, "styleId": "hourIcon" },
+                    { "type": "image", "image": { "icon": "Cloud" }, "styleId": "hourIcon" },
                     { "type": "label", "dataSourceId": "hour2Temp", "styleId": "hourTemp" }
                   ]
                 },
@@ -307,7 +307,7 @@ val weatherDashboardExample = Example(
                   "type": "vstack", "spacing": 8, "alignment": "center", "styleId": "hourCard",
                   "children": [
                     { "type": "label", "dataSourceId": "hour3Label", "styleId": "hourText" },
-                    { "type": "image", "image": { "sfsymbol": "cloud.fill" }, "styleId": "hourIcon" },
+                    { "type": "image", "image": { "icon": "Cloud" }, "styleId": "hourIcon" },
                     { "type": "label", "dataSourceId": "hour3Temp", "styleId": "hourTemp" }
                   ]
                 },
@@ -315,7 +315,7 @@ val weatherDashboardExample = Example(
                   "type": "vstack", "spacing": 8, "alignment": "center", "styleId": "hourCard",
                   "children": [
                     { "type": "label", "dataSourceId": "hour4Label", "styleId": "hourText" },
-                    { "type": "image", "image": { "sfsymbol": "cloud.sun.fill" }, "styleId": "hourIcon" },
+                    { "type": "image", "image": { "icon": "Cloudy" }, "styleId": "hourIcon" },
                     { "type": "label", "dataSourceId": "hour4Temp", "styleId": "hourTemp" }
                   ]
                 },
@@ -323,7 +323,7 @@ val weatherDashboardExample = Example(
                   "type": "vstack", "spacing": 8, "alignment": "center", "styleId": "hourCard",
                   "children": [
                     { "type": "label", "dataSourceId": "hour5Label", "styleId": "hourText" },
-                    { "type": "image", "image": { "sfsymbol": "sun.max.fill" }, "styleId": "hourIcon" },
+                    { "type": "image", "image": { "icon": "Sunny" }, "styleId": "hourIcon" },
                     { "type": "label", "dataSourceId": "hour5Temp", "styleId": "hourTemp" }
                   ]
                 }
@@ -336,7 +336,7 @@ val weatherDashboardExample = Example(
                 {
                   "type": "vstack", "spacing": 8, "alignment": "center", "styleId": "sunTimeCard",
                   "children": [
-                    { "type": "image", "image": { "sfsymbol": "sunrise.fill" }, "styleId": "sunIcon" },
+                    { "type": "image", "image": { "icon": "Sunrise" }, "styleId": "sunIcon" },
                     { "type": "label", "text": "6:52 AM", "styleId": "sunTime" },
                     { "type": "label", "text": "Sunrise", "styleId": "sunLabel" }
                   ]
@@ -344,7 +344,7 @@ val weatherDashboardExample = Example(
                 {
                   "type": "vstack", "spacing": 8, "alignment": "center", "styleId": "sunTimeCard",
                   "children": [
-                    { "type": "image", "image": { "sfsymbol": "sunset.fill" }, "styleId": "sunIcon" },
+                    { "type": "image", "image": { "icon": "Sunset" }, "styleId": "sunIcon" },
                     { "type": "label", "text": "5:18 PM", "styleId": "sunTime" },
                     { "type": "label", "text": "Sunset", "styleId": "sunLabel" }
                   ]
@@ -360,7 +360,7 @@ val weatherDashboardExample = Example(
                   "type": "hstack", "styleId": "dayRow",
                   "children": [
                     { "type": "label", "dataSourceId": "day0Label", "styleId": "dayName" },
-                    { "type": "image", "image": { "sfsymbol": "sun.max.fill" }, "styleId": "dayIcon" },
+                    { "type": "image", "image": { "icon": "Sunny" }, "styleId": "dayIcon" },
                     { "type": "spacer" },
                     { "type": "label", "dataSourceId": "day0High", "styleId": "dayTempHigh" },
                     { "type": "label", "dataSourceId": "day0Low", "styleId": "dayTempLow" }
@@ -370,7 +370,7 @@ val weatherDashboardExample = Example(
                   "type": "hstack", "styleId": "dayRow",
                   "children": [
                     { "type": "label", "dataSourceId": "day1Label", "styleId": "dayName" },
-                    { "type": "image", "image": { "sfsymbol": "cloud.sun.fill" }, "styleId": "dayIcon" },
+                    { "type": "image", "image": { "icon": "Cloudy" }, "styleId": "dayIcon" },
                     { "type": "spacer" },
                     { "type": "label", "dataSourceId": "day1High", "styleId": "dayTempHigh" },
                     { "type": "label", "dataSourceId": "day1Low", "styleId": "dayTempLow" }
@@ -380,7 +380,7 @@ val weatherDashboardExample = Example(
                   "type": "hstack", "styleId": "dayRow",
                   "children": [
                     { "type": "label", "dataSourceId": "day2Label", "styleId": "dayName" },
-                    { "type": "image", "image": { "sfsymbol": "cloud.rain.fill" }, "styleId": "dayIcon" },
+                    { "type": "image", "image": { "icon": "Rain" }, "styleId": "dayIcon" },
                     { "type": "spacer" },
                     { "type": "label", "dataSourceId": "day2High", "styleId": "dayTempHigh" },
                     { "type": "label", "dataSourceId": "day2Low", "styleId": "dayTempLow" }
@@ -390,7 +390,7 @@ val weatherDashboardExample = Example(
                   "type": "hstack", "styleId": "dayRow",
                   "children": [
                     { "type": "label", "dataSourceId": "day3Label", "styleId": "dayName" },
-                    { "type": "image", "image": { "sfsymbol": "cloud.fill" }, "styleId": "dayIcon" },
+                    { "type": "image", "image": { "icon": "Cloud" }, "styleId": "dayIcon" },
                     { "type": "spacer" },
                     { "type": "label", "dataSourceId": "day3High", "styleId": "dayTempHigh" },
                     { "type": "label", "dataSourceId": "day3Low", "styleId": "dayTempLow" }
@@ -400,7 +400,7 @@ val weatherDashboardExample = Example(
                   "type": "hstack", "styleId": "dayRow",
                   "children": [
                     { "type": "label", "dataSourceId": "day4Label", "styleId": "dayName" },
-                    { "type": "image", "image": { "sfsymbol": "sun.max.fill" }, "styleId": "dayIcon" },
+                    { "type": "image", "image": { "icon": "Sunny" }, "styleId": "dayIcon" },
                     { "type": "spacer" },
                     { "type": "label", "dataSourceId": "day4High", "styleId": "dayTempHigh" },
                     { "type": "label", "dataSourceId": "day4Low", "styleId": "dayTempLow" }

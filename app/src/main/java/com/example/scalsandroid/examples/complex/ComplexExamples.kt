@@ -137,10 +137,10 @@ private val componentShowcaseExample = Example(
           "header": { "type": "label", "text": "Images", "styleId": "sectionTitle", "padding": { "bottom": 12 } },
           "children": [
             { "type": "hstack", "spacing": 16, "children": [
-              { "type": "vstack", "spacing": 4, "children": [{ "type": "image", "image": { "sfsymbol": "star.fill" }, "styleId": "iconStyle" }, { "type": "label", "text": "Default", "styleId": "captionText" }] },
-              { "type": "vstack", "spacing": 4, "children": [{ "type": "image", "image": { "sfsymbol": "heart.fill" }, "styleId": "redIconStyle" }, { "type": "label", "text": "Red", "styleId": "captionText" }] },
-              { "type": "vstack", "spacing": 4, "children": [{ "type": "image", "image": { "sfsymbol": "bolt.fill" }, "styleId": "orangeIconStyle" }, { "type": "label", "text": "Orange", "styleId": "captionText" }] },
-              { "type": "vstack", "spacing": 4, "children": [{ "type": "image", "image": { "sfsymbol": "globe" }, "styleId": "blueIconStyle" }, { "type": "label", "text": "Blue", "styleId": "captionText" }] }
+              { "type": "vstack", "spacing": 4, "children": [{ "type": "image", "image": { "icon": "StarFilled" }, "styleId": "iconStyle" }, { "type": "label", "text": "Default", "styleId": "captionText" }] },
+              { "type": "vstack", "spacing": 4, "children": [{ "type": "image", "image": { "icon": "FavoriteFilled" }, "styleId": "redIconStyle" }, { "type": "label", "text": "Red", "styleId": "captionText" }] },
+              { "type": "vstack", "spacing": 4, "children": [{ "type": "image", "image": { "icon": "Bolt" }, "styleId": "orangeIconStyle" }, { "type": "label", "text": "Orange", "styleId": "captionText" }] },
+              { "type": "vstack", "spacing": 4, "children": [{ "type": "image", "image": { "icon": "Globe" }, "styleId": "blueIconStyle" }, { "type": "label", "text": "Blue", "styleId": "captionText" }] }
             ]}
           ]
         },
@@ -270,7 +270,7 @@ private val dadJokesExample = Example(
             "children": [
               {
                 "type": "button",
-                "image": { "sfsymbol": "xmark" },
+                "image": { "icon": "Close" },
                 "buttonShape": "circle",
                 "styleId": "closeButton",
                 "actions": { "onTap": { "type": "dismiss" } }
@@ -407,7 +407,7 @@ private val taskManagerExample = Example(
                 {
                   "type": "button",
                   "actions": { "onTap": "close" },
-                  "children": [{ "type": "image", "image": { "sfsymbol": "xmark.circle.fill" }, "styleId": "closeButton" }]
+                  "children": [{ "type": "image", "image": { "icon": "CancelFilled" }, "styleId": "closeButton" }]
                 }
               ]
             }
@@ -438,7 +438,7 @@ private val taskManagerExample = Example(
               "spacing": 12,
               "padding": { "vertical": 40 },
               "children": [
-                { "type": "image", "image": { "sfsymbol": "checklist" }, "styleId": "emptyIcon" },
+                { "type": "image", "image": { "icon": "Checklist" }, "styleId": "emptyIcon" },
                 { "type": "label", "text": "No tasks yet", "styleId": "emptyTitle" },
                 { "type": "label", "text": "Add a task above to get started", "styleId": "emptySubtitle" }
               ]
@@ -589,7 +589,7 @@ private val shoppingCartExample = Example(
                 {
                   "type": "button",
                   "actions": { "onTap": "close" },
-                  "children": [{ "type": "image", "image": { "sfsymbol": "xmark.circle.fill" }, "styleId": "closeButton" }]
+                  "children": [{ "type": "image", "image": { "icon": "CancelFilled" }, "styleId": "closeButton" }]
                 }
               ]
             }
@@ -605,7 +605,7 @@ private val shoppingCartExample = Example(
                 {
                   "type": "zstack", "styleId": "productImage",
                   "children": [
-                    { "type": "image", "image": { "sfsymbol": "headphones" }, "styleId": "productIcon" }
+                    { "type": "image", "image": { "icon": "Headset" }, "styleId": "productIcon" }
                   ]
                 },
                 {
@@ -633,7 +633,7 @@ private val shoppingCartExample = Example(
                 {
                   "type": "zstack", "styleId": "productImage",
                   "children": [
-                    { "type": "image", "image": { "sfsymbol": "applewatch" }, "styleId": "productIcon" }
+                    { "type": "image", "image": { "icon": "Watch" }, "styleId": "productIcon" }
                   ]
                 },
                 {
@@ -661,7 +661,7 @@ private val shoppingCartExample = Example(
                 {
                   "type": "zstack", "styleId": "productImage",
                   "children": [
-                    { "type": "image", "image": { "sfsymbol": "iphone" }, "styleId": "productIcon" }
+                    { "type": "image", "image": { "icon": "Phone" }, "styleId": "productIcon" }
                   ]
                 },
                 {

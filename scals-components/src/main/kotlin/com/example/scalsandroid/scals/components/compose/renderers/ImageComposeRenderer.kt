@@ -1,12 +1,16 @@
 package com.example.scalsandroid.scals.components.compose.renderers
 
+import androidx.compose.material3.Icon
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.layout.ContentScale
 import coil.compose.AsyncImage
 import com.example.scalsandroid.scals.components.compose.extensions.applyContainerStyle
+import com.example.scalsandroid.scals.components.compose.extensions.toComposeColor
 import com.example.scalsandroid.scals.components.compose.rendering.ComposeNodeRendering
 import com.example.scalsandroid.scals.components.compose.rendering.ComposeRenderContext
+import com.example.scalsandroid.scals.components.icons.IconResolver
 import com.example.scalsandroid.scals.components.nodes.ImageNode
 import com.example.scalsandroid.scals.components.nodes.RenderNodeKinds
 import com.example.scalsandroid.scals.ir.RenderNode
@@ -33,15 +37,27 @@ class ImageComposeRenderer : ComposeNodeRendering {
             maxHeight = data.maxHeight,
         )
 
-        val url = data.source.url
-        if (url != null) {
-            AsyncImage(
-                model = url,
-                contentDescription = null,
-                modifier = modifier,
-                contentScale = ContentScale.Fit,
-            )
+        // Prioritize icon over sfsymbol for cross-platform compatibility
+        val iconIdentifier = data.source.icon ?: data.source.sfsymbol
+        val icon = IconResolver.resolve(iconIdentifier)
+
+        when {
+            icon != null -> {
+                Icon(
+                    imageVector = icon,
+                    contentDescription = null,
+                    modifier = modifier,
+                    tint = data.tintColor?.toComposeColor() ?: Color.Unspecified
+                )
+            }
+            data.source.url != null -> {
+                AsyncImage(
+                    model = data.source.url,
+                    contentDescription = null,
+                    modifier = modifier,
+                    contentScale = ContentScale.Fit,
+                )
+            }
         }
-        // Named assets (sfsymbol/asset) are not rendered in this MVP
     }
 }

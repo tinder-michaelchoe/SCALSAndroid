@@ -73,7 +73,7 @@ val astrologyModeExample = Example(
                   {
                     "type": "button",
                     "image": {
-                      "sfsymbol": "xmark"
+                      "icon": "Close"
                     },
                     "styleId": "closeButton",
                     "actions": {

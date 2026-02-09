@@ -57,7 +57,7 @@ private val doubleDateExample = Example(
                     "children": [
                       {
                         "type": "button",
-                        "image": { "sfsymbol": "xmark" },
+                        "image": { "icon": "Close" },
                         "buttonShape": "circle",
                         "styleId": "closeButton",
                         "actions": { "onTap": "dismiss" }
@@ -103,7 +103,7 @@ private val doubleDateExample = Example(
                         "children": [
                           {
                             "type": "image",
-                            "image": { "sfsymbol": "clock" },
+                            "image": { "icon": "Schedule" },
                             "styleId": "clockIcon"
                           },
                           {
@@ -116,7 +116,7 @@ private val doubleDateExample = Example(
                       {
                         "type": "button",
                         "text": "Invite friends",
-                        "image": { "sfsymbol": "person.2.fill" },
+                        "image": { "icon": "People" },
                         "imagePlacement": "leading",
                         "imageSpacing": 8,
                         "styleId": "primaryButton",
@@ -126,7 +126,7 @@ private val doubleDateExample = Example(
                       {
                         "type": "button",
                         "text": "Maybe later",
-                        "image": { "sfsymbol": "arrow.right" },
+                        "image": { "icon": "ArrowForward" },
                         "imagePlacement": "trailing",
                         "imageSpacing": 8,
                         "styleId": "secondaryButton",

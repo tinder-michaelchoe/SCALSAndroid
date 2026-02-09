@@ -97,11 +97,11 @@ private val buttonsExample = Example(
         {
           "type": "hstack", "spacing": 12,
           "children": [
-            { "type": "button", "image": { "sfsymbol": "plus" }, "styleId": "iconButtonPrimary", "actions": { "onTap": "increment" } },
-            { "type": "button", "image": { "sfsymbol": "heart" }, "styleId": "iconButton", "actions": { "onTap": "increment" } },
-            { "type": "button", "image": { "sfsymbol": "star" }, "styleId": "iconButton", "actions": { "onTap": "increment" } },
-            { "type": "button", "image": { "sfsymbol": "trash" }, "styleId": "iconButton", "actions": { "onTap": "increment" } },
-            { "type": "button", "image": { "sfsymbol": "square.and.arrow.up" }, "styleId": "iconButton", "actions": { "onTap": "increment" } }
+            { "type": "button", "image": { "icon": "Add" }, "styleId": "iconButtonPrimary", "actions": { "onTap": "increment" } },
+            { "type": "button", "image": { "icon": "Favorite" }, "styleId": "iconButton", "actions": { "onTap": "increment" } },
+            { "type": "button", "image": { "icon": "Star" }, "styleId": "iconButton", "actions": { "onTap": "increment" } },
+            { "type": "button", "image": { "icon": "Delete" }, "styleId": "iconButton", "actions": { "onTap": "increment" } },
+            { "type": "button", "image": { "icon": "Share" }, "styleId": "iconButton", "actions": { "onTap": "increment" } }
           ]
         },
 
@@ -109,9 +109,9 @@ private val buttonsExample = Example(
         {
           "type": "vstack", "spacing": 8,
           "children": [
-            { "type": "button", "text": "Add Item", "image": { "sfsymbol": "plus.circle.fill" }, "imagePlacement": "leading", "styleId": "primary", "fillWidth": true, "actions": { "onTap": "increment" } },
-            { "type": "button", "text": "Edit Document", "image": { "sfsymbol": "pencil.circle" }, "imagePlacement": "leading", "styleId": "secondary", "fillWidth": true, "actions": { "onTap": "increment" } },
-            { "type": "button", "text": "Download", "image": { "sfsymbol": "arrow.down.circle" }, "imagePlacement": "leading", "styleId": "secondary", "fillWidth": true, "actions": { "onTap": "increment" } }
+            { "type": "button", "text": "Add Item", "image": { "icon": "AddCircleFilled" }, "imagePlacement": "leading", "styleId": "primary", "fillWidth": true, "actions": { "onTap": "increment" } },
+            { "type": "button", "text": "Edit Document", "image": { "icon": "Edit" }, "imagePlacement": "leading", "styleId": "secondary", "fillWidth": true, "actions": { "onTap": "increment" } },
+            { "type": "button", "text": "Download", "image": { "icon": "Download" }, "imagePlacement": "leading", "styleId": "secondary", "fillWidth": true, "actions": { "onTap": "increment" } }
           ]
         },
 
@@ -119,9 +119,9 @@ private val buttonsExample = Example(
         {
           "type": "vstack", "spacing": 8,
           "children": [
-            { "type": "button", "text": "Open Settings", "image": { "sfsymbol": "gear" }, "imagePlacement": "trailing", "styleId": "secondary", "fillWidth": true, "actions": { "onTap": "increment" } },
-            { "type": "button", "text": "Continue", "image": { "sfsymbol": "chevron.right" }, "imagePlacement": "trailing", "styleId": "primary", "fillWidth": true, "actions": { "onTap": "increment" } },
-            { "type": "button", "text": "External Link", "image": { "sfsymbol": "arrow.up.right" }, "imagePlacement": "trailing", "styleId": "secondary", "fillWidth": true, "actions": { "onTap": "increment" } }
+            { "type": "button", "text": "Open Settings", "image": { "icon": "Settings" }, "imagePlacement": "trailing", "styleId": "secondary", "fillWidth": true, "actions": { "onTap": "increment" } },
+            { "type": "button", "text": "Continue", "image": { "icon": "ChevronRight" }, "imagePlacement": "trailing", "styleId": "primary", "fillWidth": true, "actions": { "onTap": "increment" } },
+            { "type": "button", "text": "External Link", "image": { "icon": "OpenExternal" }, "imagePlacement": "trailing", "styleId": "secondary", "fillWidth": true, "actions": { "onTap": "increment" } }
           ]
         },
 
@@ -129,9 +129,9 @@ private val buttonsExample = Example(
         {
           "type": "hstack", "spacing": 12,
           "children": [
-            { "type": "button", "text": "Home", "image": { "sfsymbol": "house.fill" }, "imagePlacement": "top", "styleId": "verticalButton", "actions": { "onTap": "increment" } },
-            { "type": "button", "text": "Search", "image": { "sfsymbol": "magnifyingglass" }, "imagePlacement": "top", "styleId": "verticalButton", "actions": { "onTap": "increment" } },
-            { "type": "button", "text": "Profile", "image": { "sfsymbol": "person.fill" }, "imagePlacement": "top", "styleId": "verticalButton", "actions": { "onTap": "increment" } }
+            { "type": "button", "text": "Home", "image": { "icon": "HomeFilled" }, "imagePlacement": "top", "styleId": "verticalButton", "actions": { "onTap": "increment" } },
+            { "type": "button", "text": "Search", "image": { "icon": "Search" }, "imagePlacement": "top", "styleId": "verticalButton", "actions": { "onTap": "increment" } },
+            { "type": "button", "text": "Profile", "image": { "icon": "PersonFilled" }, "imagePlacement": "top", "styleId": "verticalButton", "actions": { "onTap": "increment" } }
           ]
         },
 
@@ -139,9 +139,9 @@ private val buttonsExample = Example(
         {
           "type": "hstack", "spacing": 12,
           "children": [
-            { "type": "button", "text": "Upload", "image": { "sfsymbol": "arrow.up.doc" }, "imagePlacement": "bottom", "styleId": "verticalButton", "actions": { "onTap": "increment" } },
-            { "type": "button", "text": "Share", "image": { "sfsymbol": "square.and.arrow.up" }, "imagePlacement": "bottom", "styleId": "verticalButton", "actions": { "onTap": "increment" } },
-            { "type": "button", "text": "Archive", "image": { "sfsymbol": "archivebox" }, "imagePlacement": "bottom", "styleId": "verticalButton", "actions": { "onTap": "increment" } }
+            { "type": "button", "text": "Upload", "image": { "icon": "Upload" }, "imagePlacement": "bottom", "styleId": "verticalButton", "actions": { "onTap": "increment" } },
+            { "type": "button", "text": "Share", "image": { "icon": "Share" }, "imagePlacement": "bottom", "styleId": "verticalButton", "actions": { "onTap": "increment" } },
+            { "type": "button", "text": "Archive", "image": { "icon": "Archive" }, "imagePlacement": "bottom", "styleId": "verticalButton", "actions": { "onTap": "increment" } }
           ]
         },
 
@@ -149,9 +149,9 @@ private val buttonsExample = Example(
         {
           "type": "hstack", "spacing": 8,
           "children": [
-            { "type": "button", "text": "Like", "image": { "sfsymbol": "hand.thumbsup" }, "imagePlacement": "leading", "styleId": "compactButton", "actions": { "onTap": "increment" } },
-            { "type": "button", "text": "Save", "image": { "sfsymbol": "bookmark" }, "imagePlacement": "leading", "styleId": "compactButton", "actions": { "onTap": "increment" } },
-            { "type": "button", "text": "More", "image": { "sfsymbol": "ellipsis" }, "imagePlacement": "trailing", "styleId": "compactButton", "actions": { "onTap": "increment" } }
+            { "type": "button", "text": "Like", "image": { "icon": "ThumbUp" }, "imagePlacement": "leading", "styleId": "compactButton", "actions": { "onTap": "increment" } },
+            { "type": "button", "text": "Save", "image": { "icon": "Bookmark" }, "imagePlacement": "leading", "styleId": "compactButton", "actions": { "onTap": "increment" } },
+            { "type": "button", "text": "More", "image": { "icon": "MoreVert" }, "imagePlacement": "trailing", "styleId": "compactButton", "actions": { "onTap": "increment" } }
           ]
         },
 
@@ -159,9 +159,9 @@ private val buttonsExample = Example(
         {
           "type": "vstack", "spacing": 8,
           "children": [
-            { "type": "button", "text": "Delete All", "image": { "sfsymbol": "trash.fill" }, "imagePlacement": "leading", "styleId": "destructive", "fillWidth": true, "actions": { "onTap": "increment" } },
-            { "type": "button", "text": "Refresh", "image": { "sfsymbol": "arrow.clockwise" }, "imagePlacement": "trailing", "styleId": "pill", "actions": { "onTap": "increment" } },
-            { "type": "button", "text": "Selected", "image": { "sfsymbol": "checkmark" }, "imagePlacement": "leading", "styleId": "pillSelected", "actions": { "onTap": "increment" } }
+            { "type": "button", "text": "Delete All", "image": { "icon": "DeleteFilled" }, "imagePlacement": "leading", "styleId": "destructive", "fillWidth": true, "actions": { "onTap": "increment" } },
+            { "type": "button", "text": "Refresh", "image": { "icon": "Refresh" }, "imagePlacement": "trailing", "styleId": "pill", "actions": { "onTap": "increment" } },
+            { "type": "button", "text": "Selected", "image": { "icon": "Check" }, "imagePlacement": "leading", "styleId": "pillSelected", "actions": { "onTap": "increment" } }
           ]
         },
 
@@ -480,28 +480,28 @@ private val imagesExample = Example(
                 {
                   "type": "vstack", "spacing": 4, "alignment": "center",
                   "children": [
-                    { "type": "image", "image": { "sfsymbol": "star.fill" }, "styleId": "iconSmall" },
+                    { "type": "image", "image": { "icon": "StarFilled" }, "styleId": "iconSmall" },
                     { "type": "label", "text": "Default", "styleId": "caption" }
                   ]
                 },
                 {
                   "type": "vstack", "spacing": 4, "alignment": "center",
                   "children": [
-                    { "type": "image", "image": { "sfsymbol": "heart.fill" }, "styleId": "iconRed" },
+                    { "type": "image", "image": { "icon": "FavoriteFilled" }, "styleId": "iconRed" },
                     { "type": "label", "text": "Red", "styleId": "caption" }
                   ]
                 },
                 {
                   "type": "vstack", "spacing": 4, "alignment": "center",
                   "children": [
-                    { "type": "image", "image": { "sfsymbol": "bell.fill" }, "styleId": "iconBlue" },
+                    { "type": "image", "image": { "icon": "NotificationsFilled" }, "styleId": "iconBlue" },
                     { "type": "label", "text": "Blue", "styleId": "caption" }
                   ]
                 },
                 {
                   "type": "vstack", "spacing": 4, "alignment": "center",
                   "children": [
-                    { "type": "image", "image": { "sfsymbol": "checkmark.circle.fill" }, "styleId": "iconGreen" },
+                    { "type": "image", "image": { "icon": "CheckCircleFilled" }, "styleId": "iconGreen" },
                     { "type": "label", "text": "Green", "styleId": "caption" }
                   ]
                 }

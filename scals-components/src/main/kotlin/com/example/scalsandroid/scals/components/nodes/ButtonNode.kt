@@ -38,7 +38,7 @@ data class ButtonStyles(
 }
 
 enum class ButtonImagePlacement {
-    LEADING, TRAILING
+    LEADING, TRAILING, TOP, BOTTOM
 }
 
 data class ButtonShape(

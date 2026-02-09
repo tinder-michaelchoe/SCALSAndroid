@@ -1152,7 +1152,7 @@ private val sectionLayoutExample = Example(
                 "alignment": "leading",
                 "styleId": "horizontalCard",
                 "children": [
-                  { "type": "image", "image": { "sfsymbol": "star.fill" }, "styleId": "horizontalCardTitle" },
+                  { "type": "image", "image": { "icon": "StarFilled" }, "styleId": "horizontalCardTitle" },
                   { "type": "label", "text": "Featured", "styleId": "horizontalCardTitle" },
                   { "type": "label", "text": "Top picks", "styleId": "horizontalCardSubtitle" }
                 ]
@@ -1163,7 +1163,7 @@ private val sectionLayoutExample = Example(
                 "alignment": "leading",
                 "styleId": "horizontalCard",
                 "children": [
-                  { "type": "image", "image": { "sfsymbol": "flame.fill" }, "styleId": "horizontalCardTitle" },
+                  { "type": "image", "image": { "icon": "Trending" }, "styleId": "horizontalCardTitle" },
                   { "type": "label", "text": "Trending", "styleId": "horizontalCardTitle" },
                   { "type": "label", "text": "Popular now", "styleId": "horizontalCardSubtitle" }
                 ]
@@ -1174,7 +1174,7 @@ private val sectionLayoutExample = Example(
                 "alignment": "leading",
                 "styleId": "horizontalCard",
                 "children": [
-                  { "type": "image", "image": { "sfsymbol": "sparkles" }, "styleId": "horizontalCardTitle" },
+                  { "type": "image", "image": { "icon": "Sparkle" }, "styleId": "horizontalCardTitle" },
                   { "type": "label", "text": "New", "styleId": "horizontalCardTitle" },
                   { "type": "label", "text": "Just added", "styleId": "horizontalCardSubtitle" }
                 ]
@@ -1185,7 +1185,7 @@ private val sectionLayoutExample = Example(
                 "alignment": "leading",
                 "styleId": "horizontalCard",
                 "children": [
-                  { "type": "image", "image": { "sfsymbol": "heart.fill" }, "styleId": "horizontalCardTitle" },
+                  { "type": "image", "image": { "icon": "FavoriteFilled" }, "styleId": "horizontalCardTitle" },
                   { "type": "label", "text": "Favorites", "styleId": "horizontalCardTitle" },
                   { "type": "label", "text": "Your likes", "styleId": "horizontalCardSubtitle" }
                 ]
@@ -1196,7 +1196,7 @@ private val sectionLayoutExample = Example(
                 "alignment": "leading",
                 "styleId": "horizontalCard",
                 "children": [
-                  { "type": "image", "image": { "sfsymbol": "clock.fill" }, "styleId": "horizontalCardTitle" },
+                  { "type": "image", "image": { "icon": "ScheduleFilled" }, "styleId": "horizontalCardTitle" },
                   { "type": "label", "text": "Recent", "styleId": "horizontalCardTitle" },
                   { "type": "label", "text": "Last viewed", "styleId": "horizontalCardSubtitle" }
                 ]
@@ -1227,7 +1227,7 @@ private val sectionLayoutExample = Example(
                 "alignment": "center",
                 "styleId": "gridCard",
                 "children": [
-                  { "type": "image", "image": { "sfsymbol": "photo.fill" }, "styleId": "gridCardIcon" },
+                  { "type": "image", "image": { "icon": "ImageFilled" }, "styleId": "gridCardIcon" },
                   { "type": "label", "text": "Photos", "styleId": "gridCardTitle" }
                 ]
               },
@@ -1237,7 +1237,7 @@ private val sectionLayoutExample = Example(
                 "alignment": "center",
                 "styleId": "gridCard",
                 "children": [
-                  { "type": "image", "image": { "sfsymbol": "music.note" }, "styleId": "gridCardIcon" },
+                  { "type": "image", "image": { "icon": "MusicNote" }, "styleId": "gridCardIcon" },
                   { "type": "label", "text": "Music", "styleId": "gridCardTitle" }
                 ]
               },
@@ -1247,7 +1247,7 @@ private val sectionLayoutExample = Example(
                 "alignment": "center",
                 "styleId": "gridCard",
                 "children": [
-                  { "type": "image", "image": { "sfsymbol": "video.fill" }, "styleId": "gridCardIcon" },
+                  { "type": "image", "image": { "icon": "VideoFilled" }, "styleId": "gridCardIcon" },
                   { "type": "label", "text": "Videos", "styleId": "gridCardTitle" }
                 ]
               },
@@ -1257,7 +1257,7 @@ private val sectionLayoutExample = Example(
                 "alignment": "center",
                 "styleId": "gridCard",
                 "children": [
-                  { "type": "image", "image": { "sfsymbol": "doc.fill" }, "styleId": "gridCardIcon" },
+                  { "type": "image", "image": { "icon": "DocumentFilled" }, "styleId": "gridCardIcon" },
                   { "type": "label", "text": "Documents", "styleId": "gridCardTitle" }
                 ]
               }
@@ -1286,7 +1286,7 @@ private val sectionLayoutExample = Example(
                 "alignment": "center",
                 "styleId": "listItemContainer",
                 "children": [
-                  { "type": "image", "image": { "sfsymbol": "person.circle.fill" }, "styleId": "listItemIcon" },
+                  { "type": "image", "image": { "icon": "AccountCircleFilled" }, "styleId": "listItemIcon" },
                   {
                     "type": "vstack",
                     "spacing": 4,
@@ -1298,7 +1298,7 @@ private val sectionLayoutExample = Example(
                     ]
                   },
                   { "type": "spacer" },
-                  { "type": "image", "image": { "sfsymbol": "chevron.right" }, "styleId": "disclosureChevron" }
+                  { "type": "image", "image": { "icon": "ChevronRight" }, "styleId": "disclosureChevron" }
                 ]
               },
               {
@@ -1307,7 +1307,7 @@ private val sectionLayoutExample = Example(
                 "alignment": "center",
                 "styleId": "listItemContainer",
                 "children": [
-                  { "type": "image", "image": { "sfsymbol": "bell.circle.fill" }, "styleId": "listItemIcon" },
+                  { "type": "image", "image": { "icon": "NotificationsActive" }, "styleId": "listItemIcon" },
                   {
                     "type": "vstack",
                     "spacing": 4,
@@ -1319,7 +1319,7 @@ private val sectionLayoutExample = Example(
                     ]
                   },
                   { "type": "spacer" },
-                  { "type": "image", "image": { "sfsymbol": "chevron.right" }, "styleId": "disclosureChevron" }
+                  { "type": "image", "image": { "icon": "ChevronRight" }, "styleId": "disclosureChevron" }
                 ]
               },
               {
@@ -1328,7 +1328,7 @@ private val sectionLayoutExample = Example(
                 "alignment": "center",
                 "styleId": "listItemContainer",
                 "children": [
-                  { "type": "image", "image": { "sfsymbol": "lock.circle.fill" }, "styleId": "listItemIcon" },
+                  { "type": "image", "image": { "icon": "LockFilled" }, "styleId": "listItemIcon" },
                   {
                     "type": "vstack",
                     "spacing": 4,
@@ -1340,7 +1340,7 @@ private val sectionLayoutExample = Example(
                     ]
                   },
                   { "type": "spacer" },
-                  { "type": "image", "image": { "sfsymbol": "chevron.right" }, "styleId": "disclosureChevron" }
+                  { "type": "image", "image": { "icon": "ChevronRight" }, "styleId": "disclosureChevron" }
                 ]
               }
             ]
@@ -1397,7 +1397,7 @@ private val sectionListExample = Example(
           {
             "type": "hstack", "padding": { "vertical": 14 },
             "children": [
-              { "type": "image", "image": { "sfsymbol": "person.fill" }, "styleId": "iconBlue" },
+              { "type": "image", "image": { "icon": "PersonFilled" }, "styleId": "iconBlue" },
               {
                 "type": "vstack", "spacing": 2, "alignment": "leading", "padding": { "leading": 12 },
                 "children": [
@@ -1411,7 +1411,7 @@ private val sectionListExample = Example(
           {
             "type": "hstack", "padding": { "vertical": 14 },
             "children": [
-              { "type": "image", "image": { "sfsymbol": "bell.fill" }, "styleId": "iconOrange" },
+              { "type": "image", "image": { "icon": "NotificationsFilled" }, "styleId": "iconOrange" },
               {
                 "type": "vstack", "spacing": 2, "alignment": "leading", "padding": { "leading": 12 },
                 "children": [
@@ -1425,7 +1425,7 @@ private val sectionListExample = Example(
           {
             "type": "hstack", "padding": { "vertical": 14 },
             "children": [
-              { "type": "image", "image": { "sfsymbol": "lock.fill" }, "styleId": "iconGreen" },
+              { "type": "image", "image": { "icon": "LockFilled" }, "styleId": "iconGreen" },
               {
                 "type": "vstack", "spacing": 2, "alignment": "leading", "padding": { "leading": 12 },
                 "children": [
@@ -1439,7 +1439,7 @@ private val sectionListExample = Example(
           {
             "type": "hstack", "padding": { "vertical": 14 },
             "children": [
-              { "type": "image", "image": { "sfsymbol": "paintbrush.fill" }, "styleId": "iconPurple" },
+              { "type": "image", "image": { "icon": "Brush" }, "styleId": "iconPurple" },
               {
                 "type": "vstack", "spacing": 2, "alignment": "leading", "padding": { "leading": 12 },
                 "children": [
@@ -1453,7 +1453,7 @@ private val sectionListExample = Example(
           {
             "type": "hstack", "padding": { "vertical": 14 },
             "children": [
-              { "type": "image", "image": { "sfsymbol": "icloud.fill" }, "styleId": "iconTeal" },
+              { "type": "image", "image": { "icon": "Cloud" }, "styleId": "iconTeal" },
               {
                 "type": "vstack", "spacing": 2, "alignment": "leading", "padding": { "leading": 12 },
                 "children": [
@@ -1467,7 +1467,7 @@ private val sectionListExample = Example(
           {
             "type": "hstack", "padding": { "vertical": 14 },
             "children": [
-              { "type": "image", "image": { "sfsymbol": "heart.fill" }, "styleId": "iconPink" },
+              { "type": "image", "image": { "icon": "FavoriteFilled" }, "styleId": "iconPink" },
               {
                 "type": "vstack", "spacing": 2, "alignment": "leading", "padding": { "leading": 12 },
                 "children": [
@@ -1481,7 +1481,7 @@ private val sectionListExample = Example(
           {
             "type": "hstack", "padding": { "vertical": 14 },
             "children": [
-              { "type": "image", "image": { "sfsymbol": "questionmark.circle.fill" }, "styleId": "iconBlue" },
+              { "type": "image", "image": { "icon": "HelpFilled" }, "styleId": "iconBlue" },
               {
                 "type": "vstack", "spacing": 2, "alignment": "leading", "padding": { "leading": 12 },
                 "children": [
@@ -1495,7 +1495,7 @@ private val sectionListExample = Example(
           {
             "type": "hstack", "padding": { "vertical": 14 },
             "children": [
-              { "type": "image", "image": { "sfsymbol": "arrow.right.square.fill" }, "styleId": "iconRed" },
+              { "type": "image", "image": { "icon": "ArrowForward" }, "styleId": "iconRed" },
               {
                 "type": "vstack", "spacing": 2, "alignment": "leading", "padding": { "leading": 12 },
                 "children": [
@@ -1524,7 +1524,7 @@ private val sectionListExample = Example(
           {
             "type": "hstack", "padding": { "vertical": 14 },
             "children": [
-              { "type": "image", "image": { "sfsymbol": "info.circle.fill" }, "styleId": "iconBlue" },
+              { "type": "image", "image": { "icon": "InfoFilled" }, "styleId": "iconBlue" },
               {
                 "type": "vstack", "spacing": 2, "alignment": "leading", "padding": { "leading": 12 },
                 "children": [
@@ -1538,7 +1538,7 @@ private val sectionListExample = Example(
           {
             "type": "hstack", "padding": { "vertical": 14 },
             "children": [
-              { "type": "image", "image": { "sfsymbol": "doc.text.fill" }, "styleId": "iconGreen" },
+              { "type": "image", "image": { "icon": "ArticleFilled" }, "styleId": "iconGreen" },
               {
                 "type": "vstack", "spacing": 2, "alignment": "leading", "padding": { "leading": 12 },
                 "children": [
@@ -1552,7 +1552,7 @@ private val sectionListExample = Example(
           {
             "type": "hstack", "padding": { "vertical": 14 },
             "children": [
-              { "type": "image", "image": { "sfsymbol": "hand.raised.fill" }, "styleId": "iconOrange" },
+              { "type": "image", "image": { "icon": "Warning" }, "styleId": "iconOrange" },
               {
                 "type": "vstack", "spacing": 2, "alignment": "leading", "padding": { "leading": 12 },
                 "children": [
@@ -1566,7 +1566,7 @@ private val sectionListExample = Example(
           {
             "type": "hstack", "padding": { "vertical": 14 },
             "children": [
-              { "type": "image", "image": { "sfsymbol": "star.fill" }, "styleId": "iconPurple" },
+              { "type": "image", "image": { "icon": "StarFilled" }, "styleId": "iconPurple" },
               {
                 "type": "vstack", "spacing": 2, "alignment": "leading", "padding": { "leading": 12 },
                 "children": [
@@ -1620,12 +1620,12 @@ private val sectionGridExample = Example(
           "padding": { "bottom": 12 }
         },
         "children": [
-          { "type": "vstack", "spacing": 8, "styleId": "gridItem", "children": [{ "type": "image", "image": { "sfsymbol": "photo.fill" }, "styleId": "itemIcon" }, { "type": "label", "text": "Photos", "styleId": "itemLabel" }] },
-          { "type": "vstack", "spacing": 8, "styleId": "gridItem", "children": [{ "type": "image", "image": { "sfsymbol": "video.fill" }, "styleId": "itemIcon" }, { "type": "label", "text": "Videos", "styleId": "itemLabel" }] },
-          { "type": "vstack", "spacing": 8, "styleId": "gridItem", "children": [{ "type": "image", "image": { "sfsymbol": "doc.fill" }, "styleId": "itemIcon" }, { "type": "label", "text": "Files", "styleId": "itemLabel" }] },
-          { "type": "vstack", "spacing": 8, "styleId": "gridItem", "children": [{ "type": "image", "image": { "sfsymbol": "music.note" }, "styleId": "itemIcon" }, { "type": "label", "text": "Music", "styleId": "itemLabel" }] },
-          { "type": "vstack", "spacing": 8, "styleId": "gridItem", "children": [{ "type": "image", "image": { "sfsymbol": "book.fill" }, "styleId": "itemIcon" }, { "type": "label", "text": "Books", "styleId": "itemLabel" }] },
-          { "type": "vstack", "spacing": 8, "styleId": "gridItem", "children": [{ "type": "image", "image": { "sfsymbol": "gamecontroller.fill" }, "styleId": "itemIcon" }, { "type": "label", "text": "Games", "styleId": "itemLabel" }] }
+          { "type": "vstack", "spacing": 8, "styleId": "gridItem", "children": [{ "type": "image", "image": { "icon": "ImageFilled" }, "styleId": "itemIcon" }, { "type": "label", "text": "Photos", "styleId": "itemLabel" }] },
+          { "type": "vstack", "spacing": 8, "styleId": "gridItem", "children": [{ "type": "image", "image": { "icon": "VideoFilled" }, "styleId": "itemIcon" }, { "type": "label", "text": "Videos", "styleId": "itemLabel" }] },
+          { "type": "vstack", "spacing": 8, "styleId": "gridItem", "children": [{ "type": "image", "image": { "icon": "DocumentFilled" }, "styleId": "itemIcon" }, { "type": "label", "text": "Files", "styleId": "itemLabel" }] },
+          { "type": "vstack", "spacing": 8, "styleId": "gridItem", "children": [{ "type": "image", "image": { "icon": "MusicNote" }, "styleId": "itemIcon" }, { "type": "label", "text": "Music", "styleId": "itemLabel" }] },
+          { "type": "vstack", "spacing": 8, "styleId": "gridItem", "children": [{ "type": "image", "image": { "icon": "BookFilled" }, "styleId": "itemIcon" }, { "type": "label", "text": "Books", "styleId": "itemLabel" }] },
+          { "type": "vstack", "spacing": 8, "styleId": "gridItem", "children": [{ "type": "image", "image": { "icon": "Gaming" }, "styleId": "itemIcon" }, { "type": "label", "text": "Games", "styleId": "itemLabel" }] }
         ]
       }]
     }]

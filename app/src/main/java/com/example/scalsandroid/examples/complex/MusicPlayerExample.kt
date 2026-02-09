@@ -113,7 +113,7 @@ val musicPlayerExample = Example(
             {
               "type": "button",
               "actions": { "onTap": "close" },
-              "children": [{ "type": "image", "image": { "sfsymbol": "xmark.circle.fill" }, "styleId": "closeButton" }]
+              "children": [{ "type": "image", "image": { "icon": "CancelFilled" }, "styleId": "closeButton" }]
             }
           ]
         },
@@ -130,7 +130,7 @@ val musicPlayerExample = Example(
               "gradientStart": "topLeading", "gradientEnd": "bottomTrailing",
               "styleId": "albumGradient"
             },
-            { "type": "image", "image": { "sfsymbol": "music.note" }, "styleId": "albumIcon" }
+            { "type": "image", "image": { "icon": "MusicNote" }, "styleId": "albumIcon" }
           ]
         },
         {
@@ -141,7 +141,7 @@ val musicPlayerExample = Example(
               "actions": { "onTap": "toggleFavorite" },
               "children": [{
                 "type": "image",
-                "image": { "sfsymbol": "heart.fill" },
+                "image": { "icon": "FavoriteFilled" },
                 "styles": { "normal": "heartIcon", "selected": "heartIconFilled" },
                 "isSelectedBinding": "isFavorite"
               }]
@@ -182,7 +182,7 @@ val musicPlayerExample = Example(
               "actions": { "onTap": "toggleShuffle" },
               "children": [{
                 "type": "image",
-                "image": { "sfsymbol": "shuffle" },
+                "image": { "icon": "Shuffle" },
                 "styles": { "normal": "shuffleIcon", "selected": "shuffleIconActive" },
                 "isSelectedBinding": "isShuffled"
               }]
@@ -190,26 +190,26 @@ val musicPlayerExample = Example(
             {
               "type": "button",
               "actions": { "onTap": "skipPrevious" },
-              "children": [{ "type": "image", "image": { "sfsymbol": "backward.fill" }, "styleId": "skipIcon" }]
+              "children": [{ "type": "image", "image": { "icon": "SkipPrevious" }, "styleId": "skipIcon" }]
             },
             {
               "type": "button", "styleId": "playButton",
               "actions": { "onTap": "togglePlay" },
               "children": [{
                 "type": "image",
-                "image": { "sfsymbol": "play.fill" },
+                "image": { "icon": "PlayFilled" },
                 "styleId": "playIcon"
               }]
             },
             {
               "type": "button",
               "actions": { "onTap": "skipNext" },
-              "children": [{ "type": "image", "image": { "sfsymbol": "forward.fill" }, "styleId": "skipIcon" }]
+              "children": [{ "type": "image", "image": { "icon": "SkipNext" }, "styleId": "skipIcon" }]
             },
             {
               "type": "button", "styleId": "shuffleButton",
               "children": [{
-                "type": "image", "image": { "sfsymbol": "repeat" }, "styleId": "shuffleIcon"
+                "type": "image", "image": { "icon": "Repeat" }, "styleId": "shuffleIcon"
               }]
             }
           ]
@@ -217,9 +217,9 @@ val musicPlayerExample = Example(
         {
           "type": "hstack", "spacing": 12,
           "children": [
-            { "type": "image", "image": { "sfsymbol": "speaker.fill" }, "styleId": "volumeIcon" },
+            { "type": "image", "image": { "icon": "VolumeUp" }, "styleId": "volumeIcon" },
             { "type": "slider", "bind": "volume", "minValue": 0, "maxValue": 1, "styleId": "volumeSlider" },
-            { "type": "image", "image": { "sfsymbol": "speaker.wave.3.fill" }, "styleId": "volumeIcon" }
+            { "type": "image", "image": { "icon": "VolumeUp" }, "styleId": "volumeIcon" }
           ]
         },
         {
@@ -241,7 +241,7 @@ val musicPlayerExample = Example(
                 "children": [
                   {
                     "type": "zstack", "styleId": "queueImage",
-                    "children": [{ "type": "image", "image": { "sfsymbol": "music.note" }, "styleId": "queueIcon" }]
+                    "children": [{ "type": "image", "image": { "icon": "MusicNote" }, "styleId": "queueIcon" }]
                   },
                   {
                     "type": "vstack", "spacing": 2, "alignment": "leading",
@@ -264,7 +264,7 @@ val musicPlayerExample = Example(
                 "children": [
                   {
                     "type": "zstack", "styleId": "queueImage",
-                    "children": [{ "type": "image", "image": { "sfsymbol": "music.note" }, "styleId": "queueIcon" }]
+                    "children": [{ "type": "image", "image": { "icon": "MusicNote" }, "styleId": "queueIcon" }]
                   },
                   {
                     "type": "vstack", "spacing": 2, "alignment": "leading",
@@ -281,7 +281,7 @@ val musicPlayerExample = Example(
                 "children": [
                   {
                     "type": "zstack", "styleId": "queueImage",
-                    "children": [{ "type": "image", "image": { "sfsymbol": "music.note" }, "styleId": "queueIcon" }]
+                    "children": [{ "type": "image", "image": { "icon": "MusicNote" }, "styleId": "queueIcon" }]
                   },
                   {
                     "type": "vstack", "spacing": 2, "alignment": "leading",

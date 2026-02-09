@@ -29,6 +29,26 @@ class ButtonResolver : ComponentResolving {
 
         val label = contentResult.content.ifEmpty { component.label ?: component.text ?: "" }
 
+        // Parse imagePlacement from additionalProperties
+        val imagePlacement = component.additionalProperties["imagePlacement"]?.stringValue?.let { placement ->
+            when (placement.lowercase()) {
+                "leading" -> ButtonImagePlacement.LEADING
+                "trailing" -> ButtonImagePlacement.TRAILING
+                "top" -> ButtonImagePlacement.TOP
+                "bottom" -> ButtonImagePlacement.BOTTOM
+                else -> ButtonImagePlacement.LEADING
+            }
+        } ?: ButtonImagePlacement.LEADING
+
+        // Parse imageSpacing from additionalProperties
+        val imageSpacing = component.additionalProperties["imageSpacing"]?.let {
+            when (it) {
+                is com.example.scalsandroid.scals.document.StateValue.IntValue -> it.value.toDouble()
+                is com.example.scalsandroid.scals.document.StateValue.DoubleValue -> it.value
+                else -> 8.0
+            }
+        } ?: 8.0
+
         val renderNode = RenderNode(ButtonNode(
             id = component.id,
             styleId = component.styleId,
@@ -38,8 +58,8 @@ class ButtonResolver : ComponentResolving {
             fillWidth = false,
             onTap = component.actions?.onTap,
             image = component.image,
-            imagePlacement = ButtonImagePlacement.LEADING,
-            imageSpacing = 8.0,
+            imagePlacement = imagePlacement,
+            imageSpacing = imageSpacing,
         ))
 
         return ComponentResolutionResult(renderNode, viewNode)

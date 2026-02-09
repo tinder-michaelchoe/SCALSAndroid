@@ -214,8 +214,8 @@ val metMuseumExample = Example(
                 "type": "image",
                 "image": {
                   "url": "${'$'}{artwork.primaryImage}",
-                  "placeholder": { "sfsymbol": "photo" },
-                  "loading": { "sfsymbol": "arrow.trianglehead.2.clockwise" }
+                  "placeholder": { "icon": "Image" },
+                  "loading": { "icon": "Refresh" }
                 },
                 "styleId": "artworkImage"
               },

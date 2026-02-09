@@ -5,6 +5,7 @@ import kotlinx.serialization.Serializable
 @Serializable
 data class ImagePlaceholder(
     val sfsymbol: String? = null,
+    val icon: String? = null,
     val url: String? = null,
     val asset: String? = null,
 )
@@ -12,6 +13,7 @@ data class ImagePlaceholder(
 @Serializable
 data class ImageSource(
     val sfsymbol: String? = null,
+    val icon: String? = null,
     val url: String? = null,
     val asset: String? = null,
     val activityIndicator: Boolean? = null,

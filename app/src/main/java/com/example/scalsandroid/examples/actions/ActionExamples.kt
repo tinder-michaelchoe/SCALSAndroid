@@ -221,7 +221,7 @@ private val dismissExample = Example(
       "alignment": "center",
       "children": [
         { "type": "spacer" },
-        { "type": "image", "image": { "sfsymbol": "checkmark.circle.fill" }, "styleId": "successIcon" },
+        { "type": "image", "image": { "icon": "CheckCircleFilled" }, "styleId": "successIcon" },
         { "type": "label", "text": "Success!", "styleId": "title" },
         { "type": "label", "text": "Tap the button to dismiss this view", "styleId": "subtitle" },
         { "type": "spacer" },
@@ -271,10 +271,10 @@ private val navigateExample = Example(
           "children": [{
             "type": "hstack",
             "children": [
-              { "type": "image", "image": { "sfsymbol": "person.circle" }, "styleId": "rowIcon" },
+              { "type": "image", "image": { "icon": "AccountCircle" }, "styleId": "rowIcon" },
               { "type": "label", "text": "Go to Profile", "styleId": "rowTitle", "padding": { "leading": 12 } },
               { "type": "spacer" },
-              { "type": "image", "image": { "sfsymbol": "chevron.right" }, "styleId": "chevron" }
+              { "type": "image", "image": { "icon": "ChevronRight" }, "styleId": "chevron" }
             ]
           }]
         },
@@ -284,10 +284,10 @@ private val navigateExample = Example(
           "children": [{
             "type": "hstack",
             "children": [
-              { "type": "image", "image": { "sfsymbol": "gear" }, "styleId": "rowIcon" },
+              { "type": "image", "image": { "icon": "Settings" }, "styleId": "rowIcon" },
               { "type": "label", "text": "Go to Settings", "styleId": "rowTitle", "padding": { "leading": 12 } },
               { "type": "spacer" },
-              { "type": "image", "image": { "sfsymbol": "chevron.right" }, "styleId": "chevron" }
+              { "type": "image", "image": { "icon": "ChevronRight" }, "styleId": "chevron" }
             ]
           }]
         }
